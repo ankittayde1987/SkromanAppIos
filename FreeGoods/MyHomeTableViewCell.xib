@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyHomeTableViewCell" customModule="Skroman" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc6-G6-db6">
+                        <rect key="frame" x="16" y="0.0" width="30" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Hpb-gq-0PA"/>
+                        </constraints>
+                        <state key="normal" image="radio1"/>
+                        <state key="selected" image="radio2"/>
+                        <connections>
+                            <action selector="tappedHomeSelectDeselect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RvJ-kT-K3O"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Home 1 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jp-7C-SIv">
+                        <rect key="frame" x="54" y="25" width="185" height="21"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set as Default" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eC-Kf-dl7">
+                        <rect key="frame" x="246.5" y="28.5" width="63.5" height="12"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu3-rw-lJB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                        <connections>
+                            <action selector="tappedHomeSelectDeselect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4rj-vf-TVN"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHY-Md-edq">
+                        <rect key="frame" x="0.0" y="69" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0ch-nC-sUd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.10150200873613358" green="0.10856882482767105" blue="0.16660797595977783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Lu3-rw-lJB" secondAttribute="trailing" id="2ZO-mF-Epw"/>
+                    <constraint firstItem="2Jp-7C-SIv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="32L-x0-cHH"/>
+                    <constraint firstItem="Xc6-G6-db6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="76R-k3-M0D"/>
+                    <constraint firstAttribute="bottom" secondItem="Xc6-G6-db6" secondAttribute="bottom" id="CRc-b5-M2Y"/>
+                    <constraint firstItem="Lu3-rw-lJB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HUf-J6-7qA"/>
+                    <constraint firstItem="2eC-Kf-dl7" firstAttribute="leading" secondItem="2Jp-7C-SIv" secondAttribute="trailing" constant="8" id="Ooj-Ci-Xzo"/>
+                    <constraint firstItem="Lu3-rw-lJB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WJq-LX-bB4"/>
+                    <constraint firstItem="SHY-Md-edq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aVL-zX-kmU"/>
+                    <constraint firstItem="2eC-Kf-dl7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="c59-sh-22h"/>
+                    <constraint firstAttribute="trailing" secondItem="SHY-Md-edq" secondAttribute="trailing" id="dK7-xP-0iT"/>
+                    <constraint firstItem="2Jp-7C-SIv" firstAttribute="leading" secondItem="Xc6-G6-db6" secondAttribute="trailing" constant="8" id="gkz-dS-0T7"/>
+                    <constraint firstAttribute="bottom" secondItem="SHY-Md-edq" secondAttribute="bottom" id="hIV-I2-ox7"/>
+                    <constraint firstAttribute="trailing" secondItem="2eC-Kf-dl7" secondAttribute="trailing" constant="10" id="kGl-JE-C5c"/>
+                    <constraint firstAttribute="bottom" secondItem="Lu3-rw-lJB" secondAttribute="bottom" id="lfa-Ju-OmF"/>
+                    <constraint firstItem="Xc6-G6-db6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vCL-eO-Ubc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.10150200873613358" green="0.10856882482767105" blue="0.16660797595977783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSelectDeselectHome" destination="Xc6-G6-db6" id="wSd-3a-2Qy"/>
+                <outlet property="btnSelectDeselectLarge" destination="Lu3-rw-lJB" id="Wng-Ac-89J"/>
+                <outlet property="lblDefaultHomeIndicator" destination="2eC-Kf-dl7" id="dZU-f4-hGV"/>
+                <outlet property="lblHomeName" destination="2Jp-7C-SIv" id="WB9-5E-7GX"/>
+                <outlet property="vwSeprator" destination="SHY-Md-edq" id="S1k-H2-SVZ"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="51.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio1" width="20" height="20"/>
+        <image name="radio2" width="20" height="20"/>
+    </resources>
+</document>

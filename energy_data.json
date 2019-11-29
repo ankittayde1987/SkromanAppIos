@@ -1,0 +1,316 @@
+{
+  "energy_data": {
+    "energy_data": [
+      {
+        "week_start_date": "2018-12-16",
+        "switchbox": [
+          {
+            "switchbox_id": "SB-1EF2",
+            "switches": [
+              {
+                "switch_id": 0,
+                "kw": 0
+              },
+              {
+                "switch_id": 1,
+                "kw": 0
+              },
+              {
+                "switch_id": 2,
+                "kw": 0
+              },
+              {
+                "switch_id": 3,
+                "kw": 0.4134111111111111
+              },
+              {
+                "switch_id": 4,
+                "kw": 0.8537833333333332
+              },
+              {
+                "switch_id": 5,
+                "kw": 1.2524416666666667
+              },
+              {
+                "switch_id": 6,
+                "kw": 0
+              },
+              {
+                "switch_id": 7,
+                "kw": 0
+              },
+              {
+                "switch_id": 8,
+                "kw": 0
+              },
+              {
+                "switch_id": 9,
+                "kw": 0
+              },
+              {
+                "switch_id": 10,
+                "kw": 0
+              }
+            ]
+          },
+          {
+            "switchbox_id": "SB-12DE",
+            "switches": [
+              {
+                "switch_id": 0,
+                "kw": 0
+              },
+              {
+                "switch_id": 1,
+                "kw": 0
+              },
+              {
+                "switch_id": 2,
+                "kw": 0
+              },
+              {
+                "switch_id": 3,
+                "kw": 0
+              },
+              {
+                "switch_id": 4,
+                "kw": 0
+              },
+              {
+                "switch_id": 5,
+                "kw": 0
+              },
+              {
+                "switch_id": 6,
+                "kw": 0
+              },
+              {
+                "switch_id": 7,
+                "kw": 0
+              },
+              {
+                "switch_id": 8,
+                "kw": 0
+              },
+              {
+                "switch_id": 9,
+                "kw": 0
+              },
+              {
+                "switch_id": 10,
+                "kw": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "week_start_date": "2018-12-23",
+        "switchbox": [
+          {
+            "switchbox_id": "SB-1EF2",
+            "switches": [
+              {
+                "switch_id": 0,
+                "kw": 0
+              },
+              {
+                "switch_id": 1,
+                "kw": 0
+              },
+              {
+                "switch_id": 2,
+                "kw": 0
+              },
+              {
+                "switch_id": 3,
+                "kw": 0.03345833333333334
+              },
+              {
+                "switch_id": 4,
+                "kw": 0.06681666666666666
+              },
+              {
+                "switch_id": 5,
+                "kw": 3.217458333333333
+              },
+              {
+                "switch_id": 6,
+                "kw": 0
+              },
+              {
+                "switch_id": 7,
+                "kw": 0
+              },
+              {
+                "switch_id": 8,
+                "kw": 0
+              },
+              {
+                "switch_id": 9,
+                "kw": 0
+              },
+              {
+                "switch_id": 10,
+                "kw": 0
+              }
+            ]
+          },
+          {
+            "switchbox_id": "SB-12DE",
+            "switches": [
+              {
+                "switch_id": 0,
+                "kw": 0
+              },
+              {
+                "switch_id": 1,
+                "kw": 0
+              },
+              {
+                "switch_id": 2,
+                "kw": 0
+              },
+              {
+                "switch_id": 3,
+                "kw": 0
+              },
+              {
+                "switch_id": 4,
+                "kw": 0
+              },
+              {
+                "switch_id": 5,
+                "kw": 0
+              },
+              {
+                "switch_id": 6,
+                "kw": 0
+              },
+              {
+                "switch_id": 7,
+                "kw": 0
+              },
+              {
+                "switch_id": 8,
+                "kw": 0
+              },
+              {
+                "switch_id": 9,
+                "kw": 0
+              },
+              {
+                "switch_id": 10,
+                "kw": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "week_start_date": "2019-01-06",
+        "switchbox": [
+          {
+            "switchbox_id": "SB-1EF2",
+            "switches": [
+              {
+                "switch_id": 0,
+                "kw": 0
+              },
+              {
+                "switch_id": 1,
+                "kw": 0
+              },
+              {
+                "switch_id": 2,
+                "kw": 0
+              },
+              {
+                "switch_id": 3,
+                "kw": 0
+              },
+              {
+                "switch_id": 4,
+                "kw": 0
+              },
+              {
+                "switch_id": 5,
+                "kw": 0
+              },
+              {
+                "switch_id": 6,
+                "kw": 0
+              },
+              {
+                "switch_id": 7,
+                "kw": 0
+              },
+              {
+                "switch_id": 8,
+                "kw": 0
+              },
+              {
+                "switch_id": 9,
+                "kw": 0
+              },
+              {
+                "switch_id": 10,
+                "kw": 0
+              }
+            ]
+          },
+          {
+            "switchbox_id": "SB-12DE",
+            "switches": [
+              {
+                "switch_id": 0,
+                "kw": 0
+              },
+              {
+                "switch_id": 1,
+                "kw": 3.020833333333333336
+              },
+              {
+                "switch_id": 2,
+                "kw": 0
+              },
+              {
+                "switch_id": 3,
+                "kw": 0
+              },
+              {
+                "switch_id": 4,
+                "kw": 0
+              },
+              {
+                "switch_id": 5,
+                "kw": 0
+              },
+              {
+                "switch_id": 6,
+                "kw": 0
+              },
+              {
+                "switch_id": 7,
+                "kw": 0
+              },
+              {
+                "switch_id": 8,
+                "kw": 0
+              },
+              {
+                "switch_id": 9,
+                "kw": 0
+              },
+              {
+                "switch_id": 10,
+                "kw": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "success": 1
+}
