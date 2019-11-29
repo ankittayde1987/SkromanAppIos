@@ -1,0 +1,268 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.2.0)
+  - Alamofire (4.4.0)
+  - AlamofireJsonToObjects (2.4.1):
+    - Alamofire
+    - EVReflection
+  - AlamofireNetworkActivityLogger (2.2.0):
+    - Alamofire (~> 4.0)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - DACircularProgress (2.3.1)
+  - EVReflection (5.10.1):
+    - EVReflection/Core (= 5.10.1)
+  - EVReflection/Core (5.10.1)
+  - Fabric (1.9.0)
+  - Firebase/Auth (5.7.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.0.3)
+  - Firebase/Core (5.7.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.1.1)
+  - Firebase/CoreOnly (5.7.0):
+    - FirebaseCore (= 5.1.2)
+  - FirebaseAnalytics (5.1.1):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleAppMeasurement (~> 5.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseAuth (5.0.3):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.0)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (5.1.2):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.2.1):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.2)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - GoogleAppMeasurement (5.7.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleMaps/Base (2.2.0)
+  - GooglePlaces (2.2.0):
+    - GoogleMaps/Base (= 2.2.0)
+  - GoogleSignIn (4.1.2):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3)":
+    - GoogleToolboxForMac/DebugUtils (= 2.1.3)
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.3)"
+  - GoogleUtilities/AppDelegateSwizzler (5.2.3):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.2.3)
+  - GoogleUtilities/Logger (5.2.3):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.2.3):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.2.3):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.2.3)"
+  - GoogleUtilities/Reachability (5.2.3):
+    - GoogleUtilities/Logger
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.13):
+    - GTMSessionFetcher/Full (= 1.1.13)
+  - GTMSessionFetcher/Core (1.1.13)
+  - GTMSessionFetcher/Full (1.1.13):
+    - GTMSessionFetcher/Core (= 1.1.13)
+  - KMPlaceholderTextView (1.3.0)
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MQTTClient (0.13.0):
+    - MQTTClient/Core (= 0.13.0)
+  - MQTTClient/Core (0.13.0):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.13.0):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.13.0)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - "SDWebImage (!= 3.7.2, ~> 3.7)"
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - p2.OAuth2 (4.2.0)
+  - PageMenu (2.0.0)
+  - PEPhotoCropEditor (1.3.1)
+  - ReachabilitySwift (3)
+  - RNLoadingButton-Swift (4.0.2)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SideMenu (3.1.5)
+  - STPopup (1.8.3)
+  - SVProgressHUD (2.1.2)
+  - SwiftLocation (3.2.3):
+    - SwiftyJSON (~> 4.0.0-alpha.1)
+  - SwiftyJSON (4.0.0)
+  - SwipeCellKit (2.0.1)
+  - TPKeyboardAvoiding (1.3.1)
+  - TWMessageBarManager (1.8.1)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.2.0)
+  - Alamofire (~> 4.4)
+  - AlamofireJsonToObjects
+  - AlamofireNetworkActivityLogger (~> 2.0)
+  - Charts (from `https://github.com/danielgindi/Charts.git`, branch `clamping-function`)
+  - Crashlytics
+  - Fabric
+  - Firebase/Auth
+  - Firebase/Core
+  - FMDB
+  - GooglePlaces
+  - GoogleSignIn
+  - KMPlaceholderTextView (~> 1.3.0)
+  - Masonry
+  - MQTTClient
+  - MWPhotoBrowser
+  - p2.OAuth2
+  - PageMenu
+  - PEPhotoCropEditor
+  - ReachabilitySwift
+  - RNLoadingButton-Swift
+  - SDWebImage (= 3.7.3)
+  - SideMenu
+  - STPopup
+  - SVProgressHUD
+  - SwiftLocation
+  - SwipeCellKit
+  - TPKeyboardAvoiding
+  - TWMessageBarManager
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - AlamofireJsonToObjects
+    - AlamofireNetworkActivityLogger
+    - Crashlytics
+    - DACircularProgress
+    - EVReflection
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FMDB
+    - GoogleAppMeasurement
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMOAuth2
+    - GTMSessionFetcher
+    - KMPlaceholderTextView
+    - Masonry
+    - MBProgressHUD
+    - MQTTClient
+    - MWPhotoBrowser
+    - nanopb
+    - p2.OAuth2
+    - PageMenu
+    - PEPhotoCropEditor
+    - ReachabilitySwift
+    - RNLoadingButton-Swift
+    - SDWebImage
+    - SideMenu
+    - STPopup
+    - SVProgressHUD
+    - SwiftLocation
+    - SwiftyJSON
+    - SwipeCellKit
+    - TPKeyboardAvoiding
+    - TWMessageBarManager
+
+EXTERNAL SOURCES:
+  Charts:
+    :branch: clamping-function
+    :git: https://github.com/danielgindi/Charts.git
+
+CHECKOUT OPTIONS:
+  Charts:
+    :commit: 1b111e08dbb704e8a3c40898fabccd1627893163
+    :git: https://github.com/danielgindi/Charts.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireJsonToObjects: 2f652417f69ca86f229b704cdd00370bb892af45
+  AlamofireNetworkActivityLogger: a7ae1842988b3f6248a49213268375bd27b515f0
+  Charts: 82c6776516b844809f55228d720129a9dc25b9f2
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  EVReflection: 8124de482178d34ccd56473e16cd95990f9a1113
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  Firebase: 734a4f92957aa6c40e7ae3fda3d9359e1890aa87
+  FirebaseAnalytics: 993577e91157feb40945abedd6ab346d8a4b6ac8
+  FirebaseAuth: 657a25e4be044d2d333663ebf515a861c5a59cd7
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 3a97432acb324b439fbed338e642f9cbb516a63d
+  FirebaseInstanceID: ea5af6920d0a4a29b40459d055bebe4a6c1333c4
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  GoogleAppMeasurement: 6cf307834da065863f9faf4c0de0a936d81dd832
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
+  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  GoogleUtilities: 6f681e27050c5e130325e89fa0316dfca826f954
+  GTMOAuth2: e8b6512c896235149df975c41d9a36c868ab7fba
+  GTMSessionFetcher: 5bb1eae636127de695590f50e7d248483eb891e6
+  KMPlaceholderTextView: 2bbcd19a273648a80a61e1e48f9743a24d8930e3
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MQTTClient: aced164e080fb139daa98fc745d01da279e55945
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  p2.OAuth2: d5ea9b928fc5d10d088d419db6f3380578b6f866
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  PEPhotoCropEditor: 613292fce009efd085e7aed975f1ebb3fec8bb7b
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  RNLoadingButton-Swift: 0be3a21a6ca07e00744200db4502566bca07405e
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
+  STPopup: da1167250a01584af7bcccb898653185f223ec46
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftLocation: a3c3bc2023118171ef3572188a31def94aa0892c
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  SwipeCellKit: 76888d93d1843dc568fdf38fff21b15dbbcf6b28
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+  TWMessageBarManager: fd84e7948ba7968a2b5d9454859135761214ec56
+
+PODFILE CHECKSUM: e85206a53a53e095734e6137306bee56a92b7c5e
+
+COCOAPODS: 1.7.5
