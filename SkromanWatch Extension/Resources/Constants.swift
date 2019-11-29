@@ -93,5 +93,5 @@ let SUBSCRIBE_Child_Mode_Feedback   = "child_mode_feedback"
 /* FOR  NSNotifications */
 
 
-hello
+ 
     public let SendToMqttViaiPhone = "SendToMqttViaiPhone"
