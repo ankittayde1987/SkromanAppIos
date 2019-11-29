@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--InterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" spacing="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SkromanWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="RLy-ZO-9j3">
+                            <items>
+                                <button width="25" height="25" alignment="left" backgroundImage="iMenu" id="ler-Gy-0sN">
+                                    <connections>
+                                        <action selector="buttonSettingClicked:" destination="AgC-eL-Hgc" id="spm-YU-nlS"/>
+                                    </connections>
+                                </button>
+                                <button width="25" height="25" alignment="right" backgroundImage="iRemoteAccessOff" id="7pb-OJ-gXP">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="switchRemoteValueChanged:" destination="AgC-eL-Hgc" id="xt3-v3-afI"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Skroman Switches" numberOfLines="2" id="wXS-Kw-TQs">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                        </label>
+                        <label width="136" alignment="center" text="Active devices 100 / 400" textAlignment="center" numberOfLines="2" id="fhQ-B8-hKS">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <table alignment="center" verticalAlignment="center" spacing="2" id="OnW-Ce-cYE">
+                            <items>
+                                <tableRow identifier="InterfaceCell" id="nca-hp-yPj" customClass="InterfaceCell" customModule="SkromanWatch_Extension">
+                                    <group key="rootItem" width="1" height="58" alignment="left" radius="15" id="OVx-jG-bX1">
+                                        <items>
+                                            <label width="130" height="68" alignment="center" verticalAlignment="center" text="Skroman Switches Office Wakad, Pune" textAlignment="center" numberOfLines="3" id="7Ch-UQ-Kgh">
+                                                <color key="textColor" red="0.91825210489999998" green="0.79289758600000004" blue="0.45086256619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="groupTable" destination="OVx-jG-bX1" id="566-YM-7oA"/>
+                                        <outlet property="labelRoom" destination="7Ch-UQ-Kgh" id="Cpq-ic-A6d"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="buttonSetting" destination="ler-Gy-0sN" id="YfJ-aE-z1z"/>
+                        <outlet property="labelActiveDevices" destination="fhQ-B8-hKS" id="sBD-FI-Od6"/>
+                        <outlet property="labelNameOfRoom" destination="wXS-Kw-TQs" id="LCs-3N-Wmc"/>
+                        <outlet property="switchRemote" destination="7pb-OJ-gXP" id="hR8-Wn-kNi"/>
+                        <outlet property="tableRooms" destination="OnW-Ce-cYE" id="tV1-Bn-ZFg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--RoomScreen-->
+        <scene sceneID="GCN-tR-wBH">
+            <objects>
+                <controller identifier="RoomScreen" id="syy-P1-lKf" customClass="RoomScreen" customModule="SkromanWatch_Extension">
+                    <items>
+                        <button width="25" height="25" alignment="right" backgroundImage="iRemoteAccessOff" id="YxU-KL-o8f">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="switchRemoteValueChanged:" destination="syy-P1-lKf" id="uKc-lc-Zuk"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Skroman Switches" textAlignment="center" numberOfLines="2" id="UwQ-NW-7g5">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                        </label>
+                        <table alignment="center" id="vAK-TB-nAv">
+                            <items>
+                                <tableRow identifier="RoomCell" id="LQf-WN-eXQ" customClass="RoomCell" customModule="SkromanWatch_Extension">
+                                    <group key="rootItem" width="1" height="60" alignment="left" radius="15" id="q7B-y1-H0C">
+                                        <items>
+                                            <label width="136" height="88" alignment="center" text="Skroman Switches Office Nilakh, Pune" textAlignment="center" numberOfLines="3" id="HVq-zR-oXB">
+                                                <color key="textColor" red="0.91825210489999998" green="0.79289758600000004" blue="0.45086256619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="groupTable" destination="q7B-y1-H0C" id="7S9-qd-FAh"/>
+                                        <outlet property="labelSwitch" destination="HVq-zR-oXB" id="fZJ-HN-Khh"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="labelName" destination="UwQ-NW-7g5" id="8Ur-8Z-wgT"/>
+                        <outlet property="switchRemote" destination="YxU-KL-o8f" id="z15-kY-NWX"/>
+                        <outlet property="tableSwitch" destination="vAK-TB-nAv" id="Egh-A9-47n"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="500" y="345"/>
+        </scene>
+        <!--SwitchScreen-->
+        <scene sceneID="IA3-bX-Myf">
+            <objects>
+                <controller identifier="SwitchScreen" id="uKK-Jh-Ctg" customClass="SwitchScreen" customModule="SkromanWatch_Extension">
+                    <items>
+                        <group width="136" alignment="center" radius="2" id="9kd-9y-xRx">
+                            <items>
+                                <button width="25" height="25" alignment="center" verticalAlignment="center" backgroundImage="childlock_close" id="qIE-RQ-OMb">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="buttonChildLockClicked:" destination="uKK-Jh-Ctg" id="a7e-DC-ens"/>
+                                    </connections>
+                                </button>
+                                <button width="25" height="25" alignment="left" backgroundImage="masterswitchOff" id="kz7-g3-wwg">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="switchMasterSwitch:" destination="uKK-Jh-Ctg" id="PT8-BV-VSf"/>
+                                    </connections>
+                                </button>
+                                <button width="25" height="25" alignment="right" backgroundImage="iRemoteAccessOff" id="qH7-PP-lHd">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="switchRemoteValueChanged:" destination="uKK-Jh-Ctg" id="MuX-lW-Gvf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                        <group width="1" alignment="center" layout="vertical" spacing="5" id="lsa-rF-uv8">
+                            <items>
+                                <label alignment="center" text="Active devices 100 /400" textAlignment="center" id="2cn-YC-BGK">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="center" text="Switch Board Name" textAlignment="center" id="cbx-EL-TAM">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="center" id="ph1-Rg-GrT">
+                            <items>
+                                <tableRow identifier="SwitchCell" id="keD-rr-nvh" customClass="SwitchCell" customModule="SkromanWatch_Extension">
+                                    <group key="rootItem" width="1" height="140" alignment="left" spacing="5" id="2IY-4Z-Zsf">
+                                        <items>
+                                            <group width="136" height="140" alignment="center" layout="vertical" radius="5" id="8dg-VD-Zht">
+                                                <items>
+                                                    <group width="20" height="20" alignment="right" layout="overlap" radius="0.0" id="B56-bb-8Is">
+                                                        <items>
+                                                            <label width="1" height="1" alignment="center" verticalAlignment="center" text="99" textAlignment="center" id="QkN-XW-Mkq">
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </label>
+                                                        </items>
+                                                        <color key="backgroundColor" red="0.73085330307772023" green="0.06336310783985577" blue="0.47677293093716538" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </group>
+                                                    <imageView alignment="center" image="lightOn" id="x65-ze-OrE"/>
+                                                    <slider width="1" height="30" alignment="center" maximum="4" steps="4" id="ClP-ZV-Fi9">
+                                                        <color key="color" red="0.91825210489999998" green="0.79289758600000004" blue="0.45086256619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="sliderValueChangedWithValue:" destination="keD-rr-nvh" id="sal-O2-gP1"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label alignment="center" verticalAlignment="bottom" text="Name Of Switch " textAlignment="center" id="yFa-cx-WYb">
+                                                        <color key="textColor" red="0.91825210489999998" green="0.79289758600000004" blue="0.45086256619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="groupCell" destination="8dg-VD-Zht" id="eSS-74-Bc9"/>
+                                        <outlet property="groupSwitchNumber" destination="B56-bb-8Is" id="4C8-Ec-9ZY"/>
+                                        <outlet property="imageSwitch" destination="x65-ze-OrE" id="dwi-Gn-Mac"/>
+                                        <outlet property="labelSwitchName" destination="yFa-cx-WYb" id="LIM-95-7DB"/>
+                                        <outlet property="labelSwitchNumber" destination="QkN-XW-Mkq" id="Hkd-CY-AaE"/>
+                                        <outlet property="sliderBrightness" destination="ClP-ZV-Fi9" id="5Ok-ST-Vc4"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer id="9DU-VO-8U1">
+                                    <connections>
+                                        <action selector="longPressCellPressed:" destination="uKK-Jh-Ctg" id="Zpb-6w-lA2"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="buttonChildLock" destination="qIE-RQ-OMb" id="bYv-FU-IgZ"/>
+                        <outlet property="labelActiveDevices" destination="2cn-YC-BGK" id="Bzu-CU-Qhp"/>
+                        <outlet property="labelSwitchName" destination="cbx-EL-TAM" id="38Z-WT-Iu7"/>
+                        <outlet property="longpPressOnImage" destination="9DU-VO-8U1" id="pAU-Np-QZC"/>
+                        <outlet property="switchMaster" destination="kz7-g3-wwg" id="nxH-cP-08A"/>
+                        <outlet property="switchRemote" destination="qH7-PP-lHd" id="5hE-zd-xcf"/>
+                        <outlet property="tableDevices" destination="ph1-Rg-GrT" id="Uc5-OC-WX0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="771" y="374"/>
+        </scene>
+        <!--LoaderaView-->
+        <scene sceneID="eyh-27-PC0">
+            <objects>
+                <controller identifier="LoaderaView" id="dYH-Ac-nZR" customClass="LoaderaView" customModule="SkromanWatch_Extension">
+                    <items>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="loader1" id="d9Y-nc-3Be"/>
+                        <label alignment="center" verticalAlignment="center" text="Loading , Please wait ..." id="sk2-PF-orC">
+                            <fontDescription key="font" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="13"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="loader" destination="d9Y-nc-3Be" id="KUh-6U-O2g"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1045" y="345"/>
+        </scene>
+        <!--HomeListScreen-->
+        <scene sceneID="1vR-fq-aOB">
+            <objects>
+                <controller identifier="HomeListScreen" id="Tqv-Ug-PYx" customClass="HomeListScreen" customModule="SkromanWatch_Extension">
+                    <items>
+                        <label alignment="center" text="List Of Homes " textAlignment="center" numberOfLines="2" id="FhE-Yl-vZV">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                        </label>
+                        <table alignment="left" id="IIV-Mt-jMO">
+                            <items>
+                                <tableRow identifier="HomeListCell" id="ZuT-7U-NMk" customClass="HomeListCell" customModule="SkromanWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" radius="5" spacing="5" id="1Fc-CN-cxO">
+                                        <items>
+                                            <label width="128" height="66" alignment="center" verticalAlignment="center" text="Skroman Switches Narhe Office , Pune" textAlignment="center" numberOfLines="3" id="1de-yY-Z6U">
+                                                <color key="textColor" red="0.91825210489999998" green="0.79289758600000004" blue="0.45086256619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="labelHome" destination="1de-yY-Z6U" id="Uen-J4-vFW"/>
+                                        <outlet property="listGroup" destination="1Fc-CN-cxO" id="kbg-zH-M3X"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableHomesList" destination="IIV-Mt-jMO" id="qsz-wE-0Xb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="939"/>
+        </scene>
+        <!--SettingsScreen-->
+        <scene sceneID="oZ4-3u-env">
+            <objects>
+                <controller identifier="SettingsScreen" id="dpa-e2-s53" customClass="SettingsScreen" customModule="SkromanWatch_Extension">
+                    <items>
+                        <group width="1" height="42" alignment="left" radius="5" spacing="7" id="8ht-DQ-4dQ">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="iProfilePic" id="OM0-MU-5Jn"/>
+                                <label width="110" height="42" alignment="center" text="Anthony Ghonsalves" numberOfLines="2" id="TGu-Md-GF3">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                        <group width="1" alignment="right" layout="vertical" radius="5" spacing="0.0" id="OWP-8N-eY0">
+                            <items>
+                                <label alignment="left" text="anthony.ghonsa@gmail.com" textAlignment="left" id="dYx-Lc-icf">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                                <label alignment="left" text="+919890431116" textAlignment="left" id="yif-0c-QO2">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" radius="5" spacing="5" id="cvk-wQ-n7h">
+                            <items>
+                                <imageView width="35" height="35" alignment="left" image="iMyHomes" id="K3R-W9-PhI"/>
+                                <button alignment="left" title="My Homes" id="FX4-GE-CrA">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="buttonHomeClickedWithSender:" destination="dpa-e2-s53" id="N3r-eL-3ik"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                        <group width="1" alignment="left" radius="5" spacing="5" id="4Df-6P-gJu">
+                            <items>
+                                <imageView width="35" height="35" alignment="left" image="isync" id="QK5-Eb-HET"/>
+                                <button alignment="left" title="Sync" id="nkg-G2-4tm">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="buttonSyncClickedWithSender:" destination="dpa-e2-s53" id="3Iz-zN-f6a"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="buttonHome" destination="FX4-GE-CrA" id="7tc-oX-pef"/>
+                        <outlet property="buttonSync" destination="nkg-G2-4tm" id="T5e-Fo-AGb"/>
+                        <outlet property="contactGroup" destination="OWP-8N-eY0" id="c1Z-tq-PAa"/>
+                        <outlet property="homeGroup" destination="cvk-wQ-n7h" id="4e5-xr-sZb"/>
+                        <outlet property="imageHome" destination="K3R-W9-PhI" id="yeO-Jl-SkG"/>
+                        <outlet property="imageSync" destination="QK5-Eb-HET" id="oZt-5j-vqP"/>
+                        <outlet property="imageUserIcon" destination="OM0-MU-5Jn" id="qR1-Fa-cms"/>
+                        <outlet property="labelEmail" destination="dYx-Lc-icf" id="eKx-QB-e6Z"/>
+                        <outlet property="labelName" destination="TGu-Md-GF3" id="sri-LM-WMS"/>
+                        <outlet property="labelPhone" destination="yif-0c-QO2" id="N85-Tp-KAw"/>
+                        <outlet property="nameGroup" destination="8ht-DQ-4dQ" id="c7T-0J-emz"/>
+                        <outlet property="syncGroup" destination="4Df-6P-gJu" id="Jxq-cV-NQb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="childlock_close" width="25" height="25"/>
+        <image name="iMenu" width="25" height="25"/>
+        <image name="iMyHomes" width="35" height="35"/>
+        <image name="iProfilePic" width="40" height="40"/>
+        <image name="iRemoteAccessOff" width="25" height="25"/>
+        <image name="isync" width="35" height="35"/>
+        <image name="lightOn" width="70" height="70"/>
+        <image name="loader1" width="472.5" height="472.5"/>
+        <image name="masterswitchOff" width="25" height="25"/>
+    </resources>
+</document>
