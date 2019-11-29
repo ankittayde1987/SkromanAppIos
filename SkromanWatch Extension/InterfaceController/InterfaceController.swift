@@ -196,7 +196,7 @@ class InterfaceController: WKInterfaceController , WCSessionDelegate {
         NotificationCenter.default.addObserver(
         self,
         selector: #selector(self.askForDataToiPhone),
-        name: NSNotification.Name(rawValue: "SendToMqttViaiPhone"),
+        name: NSNotification.Name(rawValue: SendToMqttViaiPhone),
         object: nil)
     }
     

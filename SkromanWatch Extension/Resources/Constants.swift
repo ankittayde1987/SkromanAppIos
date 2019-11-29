@@ -88,3 +88,10 @@ let PUBLISH_Child_Mode_App_To_Rpi   = "child_mode_app_to_rpi"
 let SUBSCRIBE_UPDATE_SWITCH           = "update_switch_ack_app"
 let SUBSCRIBE_Master_Mode_Feedback    = "master_mode_feedback"
 let SUBSCRIBE_Child_Mode_Feedback   = "child_mode_feedback"
+
+
+/* FOR  NSNotifications */
+
+
+
+    public let SendToMqttViaiPhone = "SendToMqttViaiPhone"

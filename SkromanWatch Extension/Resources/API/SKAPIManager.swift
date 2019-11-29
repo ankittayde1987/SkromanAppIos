@@ -31,7 +31,7 @@ class SKAPIManager: NSObject {
         
         let dictonary: NSMutableDictionary = NSMutableDictionary()
         dictonary.setValue(flag, forKey: "remote_access")
-//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendToMqttViaiPhone"), object: nil, userInfo: dictonary as? [AnyHashable : Any])
+//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: SendToMqttViaiPhone), object: nil, userInfo: dictonary as? [AnyHashable : Any])
 
     }
     
@@ -45,14 +45,14 @@ class SKAPIManager: NSObject {
         dictonary.setValue(publishTopic, forKey: "publishTopic")
         dictonary.setValue(subscribeTopic, forKey: "subscribeTopic")
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendToMqttViaiPhone"), object: nil, userInfo: dictonary as? [AnyHashable : Any])
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: SendToMqttViaiPhone), object: nil, userInfo: dictonary as? [AnyHashable : Any])
     }
     
     
     
      func sendDeleteMode(dictonary: NSMutableDictionary) {
         
-//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendToMqttViaiPhone"), object: nil, userInfo: dictonary as? [AnyHashable : Any])
+//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: SendToMqttViaiPhone), object: nil, userInfo: dictonary as? [AnyHashable : Any])
     }
     
     
@@ -65,7 +65,7 @@ class SKAPIManager: NSObject {
         dictonary.setValue(publishTopic, forKey: "publishTopic")
         dictonary.setValue(subscribeTopic, forKey: "subscribeTopic")
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendToMqttViaiPhone"), object: nil, userInfo: dictonary as? [AnyHashable : Any])
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: SendToMqttViaiPhone), object: nil, userInfo: dictonary as? [AnyHashable : Any])
     }
     
     
@@ -78,7 +78,7 @@ class SKAPIManager: NSObject {
         dictonary.setValue(publishTopic, forKey: "publishTopic")
         dictonary.setValue(subscribeTopic, forKey: "subscribeTopic")
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendToMqttViaiPhone"), object: nil, userInfo: dictonary as? [AnyHashable : Any])
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: SendToMqttViaiPhone), object: nil, userInfo: dictonary as? [AnyHashable : Any])
     }
     
     
@@ -91,13 +91,13 @@ class SKAPIManager: NSObject {
         dictonary.setValue(publishTopic, forKey: "publishTopic")
         dictonary.setValue(subscribeTopic, forKey: "subscribeTopic")
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendToMqttViaiPhone"), object: nil, userInfo: dictonary as? [AnyHashable : Any])
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: SendToMqttViaiPhone), object: nil, userInfo: dictonary as? [AnyHashable : Any])
     }
 
     
     func getUserInfo(dictonary: NSDictionary) {
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendToMqttViaiPhone"), object: nil, userInfo: dictonary as! [AnyHashable : Any])
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: SendToMqttViaiPhone), object: nil, userInfo: dictonary as? [AnyHashable : Any])
     }
 
     
