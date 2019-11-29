@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="LabelAndTextFieldTableViewCell" customModule="Skroman" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwQ-AI-e7I">
+                        <rect key="frame" x="36" y="8" width="248" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="W1J-K2-GZg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpb-ml-MLD">
+                        <rect key="frame" x="36" y="37" width="248" height="40"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qaP-77-MBA">
+                                <rect key="frame" x="8" y="0.0" width="232" height="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1758568286895752" green="0.1868039071559906" blue="0.25729316473007202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qaP-77-MBA" firstAttribute="leading" secondItem="hpb-ml-MLD" secondAttribute="leading" constant="8" id="6jv-Hs-6Tx"/>
+                            <constraint firstAttribute="trailing" secondItem="qaP-77-MBA" secondAttribute="trailing" constant="8" id="Gxl-uk-Tdg"/>
+                            <constraint firstItem="qaP-77-MBA" firstAttribute="top" secondItem="hpb-ml-MLD" secondAttribute="top" id="H2u-dq-plI"/>
+                            <constraint firstAttribute="bottom" secondItem="qaP-77-MBA" secondAttribute="bottom" id="Y5w-Cf-LbA"/>
+                            <constraint firstAttribute="height" constant="40" id="dDn-Bh-jTr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.097598500549999995" green="0.10475020860000001" blue="0.1586461663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WwQ-AI-e7I" secondAttribute="trailing" constant="36" id="AyK-aH-cbq"/>
+                    <constraint firstItem="WwQ-AI-e7I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Shb-Ee-3hK"/>
+                    <constraint firstItem="hpb-ml-MLD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="36" id="cgt-9O-RK7"/>
+                    <constraint firstAttribute="bottom" secondItem="hpb-ml-MLD" secondAttribute="bottom" constant="26" id="hps-LH-w0X"/>
+                    <constraint firstAttribute="trailing" secondItem="hpb-ml-MLD" secondAttribute="trailing" constant="36" id="sym-Pa-Nq1"/>
+                    <constraint firstItem="WwQ-AI-e7I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="36" id="tZ4-Fp-WnV"/>
+                    <constraint firstItem="hpb-ml-MLD" firstAttribute="top" secondItem="WwQ-AI-e7I" secondAttribute="bottom" constant="10" id="uqN-wF-LuX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.097598500549999995" green="0.10475020860000001" blue="0.1586461663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblUsedFor" destination="WwQ-AI-e7I" id="naY-7e-tEU"/>
+                <outlet property="txtFieldContainer" destination="qaP-77-MBA" id="bVq-gT-ue4"/>
+                <outlet property="vwTxtFieldContainer" destination="hpb-ml-MLD" id="7i9-s3-U3T"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="79"/>
+        </tableViewCell>
+    </objects>
+</document>

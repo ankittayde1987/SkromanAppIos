@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyProfileViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="btnChnagePassword" destination="GYy-Qf-xFA" id="bGo-VU-qD3"/>
+                <outlet property="btnSave" destination="DfV-PB-2VF" id="cR7-fc-bkU"/>
+                <outlet property="btnUserImage" destination="BqC-p7-EVC" id="oSj-Ci-xtb"/>
+                <outlet property="tableView" destination="fQV-Fr-aDw" id="edc-be-5Cy"/>
+                <outlet property="view" destination="XD7-6V-Unw" id="b0R-du-b7G"/>
+                <outlet property="vwBottomContainer" destination="l9v-uo-6Yr" id="kFT-hL-WOG"/>
+                <outlet property="vwSeprator" destination="Hll-j3-iZz" id="ISh-yj-BgJ"/>
+                <outlet property="vwTableFooter" destination="Yf8-Gs-LF0" id="j7d-Sy-Z3q"/>
+                <outlet property="vwTableHeader" destination="q6o-wY-iDX" id="nMq-Wb-6oG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="XD7-6V-Unw">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fQV-Fr-aDw" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+                    <color key="backgroundColor" red="0.10150200873613358" green="0.10856882482767105" blue="0.16660797595977783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0Fh-wT-4kF"/>
+                        <outlet property="delegate" destination="-1" id="1P3-QB-I63"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9v-uo-6Yr" userLabel="vwBottomContainer">
+                    <rect key="frame" x="0.0" y="609" width="375" height="58"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hll-j3-iZz" userLabel="vwSeprator">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.24313725489999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="xJE-Df-t0d"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-PB-2VF">
+                            <rect key="frame" x="0.0" y="1" width="375" height="57"/>
+                            <color key="backgroundColor" red="0.25098039220000001" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="pbH-eN-1ni"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Save"/>
+                            <connections>
+                                <action selector="tappedOnSave:" destination="-1" eventType="touchUpInside" id="Cgu-Tl-ovv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="DfV-PB-2VF" firstAttribute="top" secondItem="Hll-j3-iZz" secondAttribute="bottom" id="P84-kA-cZE"/>
+                        <constraint firstItem="Hll-j3-iZz" firstAttribute="top" secondItem="l9v-uo-6Yr" secondAttribute="top" id="WBm-Yo-8Ih"/>
+                        <constraint firstItem="Hll-j3-iZz" firstAttribute="leading" secondItem="l9v-uo-6Yr" secondAttribute="leading" id="bcU-Ek-E8d"/>
+                        <constraint firstAttribute="trailing" secondItem="Hll-j3-iZz" secondAttribute="trailing" id="rgv-4A-bdJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DfV-PB-2VF" firstAttribute="leading" secondItem="cmr-oY-sBF" secondAttribute="leading" id="8GB-Ey-L3p"/>
+                <constraint firstItem="cmr-oY-sBF" firstAttribute="trailing" secondItem="DfV-PB-2VF" secondAttribute="trailing" id="AVN-MO-uR8"/>
+                <constraint firstItem="l9v-uo-6Yr" firstAttribute="top" secondItem="fQV-Fr-aDw" secondAttribute="bottom" id="Cgw-4k-L1Q"/>
+                <constraint firstAttribute="bottom" secondItem="l9v-uo-6Yr" secondAttribute="bottom" id="Lbu-tb-QC4"/>
+                <constraint firstItem="cmr-oY-sBF" firstAttribute="trailing" secondItem="fQV-Fr-aDw" secondAttribute="trailing" id="R3v-Cu-WdT"/>
+                <constraint firstItem="fQV-Fr-aDw" firstAttribute="leading" secondItem="cmr-oY-sBF" secondAttribute="leading" id="Vpt-6y-XNe"/>
+                <constraint firstItem="l9v-uo-6Yr" firstAttribute="leading" secondItem="XD7-6V-Unw" secondAttribute="leading" id="XhM-LL-T65"/>
+                <constraint firstItem="l9v-uo-6Yr" firstAttribute="trailing" secondItem="XD7-6V-Unw" secondAttribute="trailing" id="ZYn-DP-1Dn"/>
+                <constraint firstItem="cmr-oY-sBF" firstAttribute="bottom" secondItem="DfV-PB-2VF" secondAttribute="bottom" id="b7v-on-Sn5"/>
+                <constraint firstItem="fQV-Fr-aDw" firstAttribute="top" secondItem="XD7-6V-Unw" secondAttribute="top" id="q4a-Nx-i8t"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="cmr-oY-sBF"/>
+            <point key="canvasLocation" x="17" y="173"/>
+        </view>
+        <view contentMode="scaleToFill" id="q6o-wY-iDX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqC-p7-EVC">
+                    <rect key="frame" x="134" y="18" width="106" height="106"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="106" id="nCL-bm-9KA"/>
+                        <constraint firstAttribute="height" constant="106" id="y6g-AJ-KTE"/>
+                    </constraints>
+                    <state key="normal" image="profile_pic"/>
+                    <connections>
+                        <action selector="tappedOnUserImage:" destination="-1" eventType="touchUpInside" id="XAX-uj-BTD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.10150200873613358" green="0.10856882482767105" blue="0.16660797595977783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BqC-p7-EVC" firstAttribute="centerX" secondItem="q6o-wY-iDX" secondAttribute="centerX" id="Fnm-6t-TGf"/>
+                <constraint firstItem="BqC-p7-EVC" firstAttribute="centerY" secondItem="q6o-wY-iDX" secondAttribute="centerY" id="tkv-O4-Qvw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="8bh-pm-Iyd"/>
+            <point key="canvasLocation" x="17" y="638"/>
+        </view>
+        <view contentMode="scaleToFill" id="Yf8-Gs-LF0">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYy-Qf-xFA">
+                    <rect key="frame" x="8" y="13" width="359" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="mGX-Bp-Rl5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                    <state key="normal" title="Change Password">
+                        <color key="titleColor" red="0.89411764705882346" green="0.73725490196078436" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tappedOnChangePassword:" destination="-1" eventType="touchUpInside" id="osA-99-2FE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.10150200873613358" green="0.10856882482767105" blue="0.16660797595977783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GYy-Qf-xFA" firstAttribute="top" secondItem="vuB-eN-c79" secondAttribute="top" constant="13" id="Cem-uX-Lo0"/>
+                <constraint firstItem="vuB-eN-c79" firstAttribute="trailing" secondItem="GYy-Qf-xFA" secondAttribute="trailing" constant="8" id="PCc-HU-wZV"/>
+                <constraint firstItem="GYy-Qf-xFA" firstAttribute="leading" secondItem="vuB-eN-c79" secondAttribute="leading" constant="8" id="gOg-AF-G9b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vuB-eN-c79"/>
+            <point key="canvasLocation" x="16.5" y="781"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile_pic" width="72" height="72"/>
+    </resources>
+</document>

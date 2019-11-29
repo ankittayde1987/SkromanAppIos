@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="FooterButtonCollectionReusableView" customModule="Skroman" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRV-XP-5es" userLabel="vwBottomContainer">
+                    <rect key="frame" x="0.0" y="30" width="320" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljU-lH-0OY" userLabel="vwSeprator">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.24313725489999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="8uS-fM-quO"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-vk-GAj">
+                            <rect key="frame" x="0.0" y="1" width="320" height="59"/>
+                            <color key="backgroundColor" red="0.25098039220000001" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="SAVE"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="8XH-hh-wF9"/>
+                        <constraint firstAttribute="trailing" secondItem="ljU-lH-0OY" secondAttribute="trailing" id="Acr-8h-yVg"/>
+                        <constraint firstItem="ljU-lH-0OY" firstAttribute="top" secondItem="rRV-XP-5es" secondAttribute="top" id="Aps-Xt-SW9"/>
+                        <constraint firstAttribute="trailing" secondItem="qfd-vk-GAj" secondAttribute="trailing" id="Bkv-Xn-zsG"/>
+                        <constraint firstItem="ljU-lH-0OY" firstAttribute="leading" secondItem="rRV-XP-5es" secondAttribute="leading" id="Ltl-nP-Dok"/>
+                        <constraint firstAttribute="bottom" secondItem="qfd-vk-GAj" secondAttribute="bottom" id="aqH-tg-mS4"/>
+                        <constraint firstItem="qfd-vk-GAj" firstAttribute="top" secondItem="ljU-lH-0OY" secondAttribute="bottom" id="lkr-mf-KOc"/>
+                        <constraint firstItem="qfd-vk-GAj" firstAttribute="leading" secondItem="rRV-XP-5es" secondAttribute="leading" id="n8i-dl-5HM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rRV-XP-5es" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="JrC-6n-pUn"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="rRV-XP-5es" secondAttribute="bottom" constant="20" id="RHh-DW-yWY"/>
+                <constraint firstItem="rRV-XP-5es" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="g1o-dD-W7d"/>
+                <constraint firstItem="rRV-XP-5es" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="30" id="xwE-dk-4n9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="btnSave" destination="qfd-vk-GAj" id="Oiq-lk-Vyh"/>
+                <outlet property="vwBottomContainer" destination="rRV-XP-5es" id="4Gw-7t-PT2"/>
+                <outlet property="vwSeprator" destination="ljU-lH-0OY" id="RJ1-kt-gvb"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="140"/>
+        </collectionReusableView>
+    </objects>
+</document>

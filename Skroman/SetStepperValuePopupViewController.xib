@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetStepperValuePopupViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="eeZ-cO-yOj" id="rgY-L9-4UV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwSteeper" destination="vQB-QZ-tfE" id="r7u-0B-lDq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="vQB-QZ-tfE">
+                    <rect key="frame" x="8" y="12" width="359" height="31"/>
+                    <color key="tintColor" red="0.84705882349999995" green="0.21960784310000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="maximumTrackTintColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="thumbTintColor" red="1" green="0.25098039215686274" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="didChangeStapperValue:" destination="-1" eventType="valueChanged" id="SgF-RU-j8B"/>
+                    </connections>
+                </slider>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-cO-yOj">
+                    <rect key="frame" x="10" y="50" width="355" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="D37-LF-VC6">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="tYO-bX-IT7"/>
+                        <outlet property="delegate" destination="-1" id="Uts-BI-pOb"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eeZ-cO-yOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="1Uy-mJ-pdo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eeZ-cO-yOj" secondAttribute="bottom" constant="12" id="3dp-G3-Eta"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vQB-QZ-tfE" secondAttribute="trailing" constant="10" id="D4s-oH-Lts"/>
+                <constraint firstItem="vQB-QZ-tfE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="MrI-Pc-dDR"/>
+                <constraint firstItem="eeZ-cO-yOj" firstAttribute="top" secondItem="vQB-QZ-tfE" secondAttribute="bottom" constant="8" id="Z7t-rw-d5d"/>
+                <constraint firstItem="vQB-QZ-tfE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="bpj-hK-geK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eeZ-cO-yOj" secondAttribute="trailing" constant="10" id="h4n-4h-hes"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="-232"/>
+        </view>
+    </objects>
+</document>

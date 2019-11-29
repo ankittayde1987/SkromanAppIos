@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Medium.otf">
+            <string>SanFranciscoText-Medium</string>
+        </array>
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddIPAddressViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSave" destination="mmI-cU-xgZ" id="Xap-o6-rge"/>
+                <outlet property="labelIpAddress" destination="dYu-NU-kDf" id="Gvb-CO-VzR"/>
+                <outlet property="lblIPAdress" destination="UD1-J7-X2l" id="MzQ-Lr-Shy"/>
+                <outlet property="textfieldIpAddress" destination="VtA-CA-OKf" id="nJ7-X5-zFV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewSeprator" destination="Ky8-kV-VNY" id="185-6m-s7H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD IP ADDRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYu-NU-kDf">
+                    <rect key="frame" x="30" y="54" width="260" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Czh-zN-OFS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ky8-kV-VNY">
+                    <rect key="frame" x="30" y="90" width="260" height="1"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.25098039220000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="U1B-eY-GH1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Ip Address " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-J7-X2l">
+                    <rect key="frame" x="30" y="107" width="260" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="eiP-GX-Siu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VtA-CA-OKf">
+                    <rect key="frame" x="30" y="131" width="260" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qFu-IM-buc"/>
+                    </constraints>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Hrj-fR-FkE"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmI-cU-xgZ">
+                    <rect key="frame" x="30" y="178" width="260" height="40"/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="x3Q-A0-mYz"/>
+                    </constraints>
+                    <state key="normal" title="Save"/>
+                    <connections>
+                        <action selector="btnSaveTapped:" destination="-1" eventType="touchUpInside" id="EHY-rp-TAW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1019607843" green="0.10980392160000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dYu-NU-kDf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="0UH-TV-qE4"/>
+                <constraint firstItem="VtA-CA-OKf" firstAttribute="top" secondItem="UD1-J7-X2l" secondAttribute="bottom" constant="8" id="17x-yH-8fq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dYu-NU-kDf" secondAttribute="trailing" constant="30" id="97p-be-w1r"/>
+                <constraint firstItem="Ky8-kV-VNY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="MlI-Ei-Sxh"/>
+                <constraint firstItem="VtA-CA-OKf" firstAttribute="trailing" secondItem="Ky8-kV-VNY" secondAttribute="trailing" id="Pq4-Nw-GIN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mmI-cU-xgZ" secondAttribute="trailing" constant="30" id="QOq-I0-VqM"/>
+                <constraint firstItem="Ky8-kV-VNY" firstAttribute="top" secondItem="dYu-NU-kDf" secondAttribute="bottom" constant="15" id="Zat-vp-u5E"/>
+                <constraint firstItem="mmI-cU-xgZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="dyk-71-pEz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ky8-kV-VNY" secondAttribute="trailing" constant="30" id="ial-FO-itd"/>
+                <constraint firstItem="VtA-CA-OKf" firstAttribute="leading" secondItem="Ky8-kV-VNY" secondAttribute="leading" id="lTA-IL-iu6"/>
+                <constraint firstItem="UD1-J7-X2l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="nrb-B6-9cY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UD1-J7-X2l" secondAttribute="trailing" constant="30" id="oa3-ca-qYy"/>
+                <constraint firstItem="UD1-J7-X2l" firstAttribute="top" secondItem="Ky8-kV-VNY" secondAttribute="bottom" constant="16" id="t8V-Sy-H2y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="dYu-NU-kDf" secondAttribute="top" constant="-10" id="vDy-nJ-snD"/>
+                <constraint firstItem="mmI-cU-xgZ" firstAttribute="top" secondItem="VtA-CA-OKf" secondAttribute="bottom" constant="7" id="yji-R3-lgh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-86.956521739130437" y="-87.388392857142847"/>
+        </view>
+    </objects>
+</document>

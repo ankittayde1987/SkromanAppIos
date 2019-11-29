@@ -1,0 +1,4 @@
+{"identity":{"generator":"Crashlytics iOS SDK/3.12.0","build_version":"136","display_version":"3.12.0","api_key":"758a9f39c6c0bb97b1379e14477372295c801892","started_at":1569651729,"session_id":"660a78004abc4491a04c586b2981bdcd","install_id":"6C59CC1C-DB0B-42EC-8FE6-897C9C30D1DF","beta_token":null,"absolute_log_timestamps":true}}
+{"host":{"model":"iPhone7,1","machine":"N56AP","os_build_version":"16F203","os_display_version":"12.3.1","platform":"ios","locale":"en_IN"}}
+{"application":{"bundle_id":"com.skromanglobal.app","custom_bundle_id":null,"build_version":"1","display_version":"1.0","extension_id":null}}
+{"executable":{"architecture":"arm64","uuid":"2f6b27130f4d3d26990b4233ca2360c3","base":4304257024,"size":5996544,"encrypted":false,"minimum_sdk_version":"0.0.0","built_sdk_version":"0.0.0"}}

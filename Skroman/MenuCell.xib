@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MenuCell" customModule="Skroman" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="009-QX-COU">
+                        <rect key="frame" x="15" y="0.0" width="42" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pap-sP-LOl">
+                        <rect key="frame" x="269" y="-3" width="43" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="43" id="gmk-60-l2X"/>
+                            <constraint firstAttribute="height" constant="50" id="vMv-Xj-6uZ"/>
+                        </constraints>
+                        <state key="normal" image="switch_on"/>
+                        <connections>
+                            <action selector="tappedSwitch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S9Q-Qh-dMT"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLV-If-C1F">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Tnc-yv-aIr"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="zag-Z0-2LP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pap-sP-LOl" firstAttribute="centerY" secondItem="009-QX-COU" secondAttribute="centerY" id="8JT-Is-LJc"/>
+                    <constraint firstItem="ZLV-If-C1F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BnQ-rs-fJe"/>
+                    <constraint firstAttribute="bottom" secondItem="ZLV-If-C1F" secondAttribute="bottom" id="E6y-I3-sQY"/>
+                    <constraint firstItem="Pap-sP-LOl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="009-QX-COU" secondAttribute="trailing" constant="8" id="J6h-CP-aIf"/>
+                    <constraint firstAttribute="trailing" secondItem="ZLV-If-C1F" secondAttribute="trailing" id="JiM-Fq-8Hv"/>
+                    <constraint firstAttribute="bottom" secondItem="009-QX-COU" secondAttribute="bottom" id="QAQ-3H-Pxa"/>
+                    <constraint firstItem="009-QX-COU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="boy-mD-Tk4"/>
+                    <constraint firstItem="009-QX-COU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vBk-W7-Apo"/>
+                    <constraint firstAttribute="trailing" secondItem="Pap-sP-LOl" secondAttribute="trailing" constant="8" id="wKJ-pK-aA2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSwitch" destination="Pap-sP-LOl" id="e8y-gS-NzG"/>
+                <outlet property="btnSwitchWidth" destination="gmk-60-l2X" id="v2V-gL-4fY"/>
+                <outlet property="lblTitle" destination="009-QX-COU" id="zLb-tL-P3g"/>
+                <outlet property="vwSeprator" destination="ZLV-If-C1F" id="5Yb-5a-Zcr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="switch_on" width="43" height="18"/>
+    </resources>
+</document>

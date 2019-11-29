@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditSwitchViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSave" destination="9Av-a7-2v8" id="peT-mq-h5B"/>
+                <outlet property="collectionView" destination="6HQ-NK-C1V" id="C9g-sh-hf2"/>
+                <outlet property="view" destination="Ato-Od-3nR" id="jUh-oq-n8j"/>
+                <outlet property="vwBottomContainer" destination="b3Y-ng-lab" id="P6b-W8-uMw"/>
+                <outlet property="vwSeprator" destination="jCf-Ab-6xo" id="CHn-Cq-Jwb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Ato-Od-3nR">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6HQ-NK-C1V" customClass="TPKeyboardAvoidingCollectionView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+                    <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="whP-g5-dIB">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1cG-Qz-9LM"/>
+                        <outlet property="delegate" destination="-1" id="t2Y-bW-bcl"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3Y-ng-lab" userLabel="vwBottomContainer">
+                    <rect key="frame" x="0.0" y="609" width="375" height="58"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCf-Ab-6xo" userLabel="vwSeprator">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.24313725489999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="9kp-bX-wTa"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Av-a7-2v8">
+                            <rect key="frame" x="0.0" y="1" width="375" height="57"/>
+                            <color key="backgroundColor" red="0.25098039220000001" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="xXS-Kp-jxm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="SAVE"/>
+                            <connections>
+                                <action selector="tappedOnSave:" destination="-1" eventType="touchUpInside" id="fQ0-SE-hob"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="jCf-Ab-6xo" firstAttribute="leading" secondItem="b3Y-ng-lab" secondAttribute="leading" id="Mb7-Qx-ffn"/>
+                        <constraint firstItem="9Av-a7-2v8" firstAttribute="top" secondItem="jCf-Ab-6xo" secondAttribute="bottom" id="ePT-d6-4Hf"/>
+                        <constraint firstItem="jCf-Ab-6xo" firstAttribute="top" secondItem="b3Y-ng-lab" secondAttribute="top" id="g2A-ef-aVe"/>
+                        <constraint firstAttribute="trailing" secondItem="jCf-Ab-6xo" secondAttribute="trailing" id="kKI-Xm-GGE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6HQ-NK-C1V" firstAttribute="top" secondItem="Ato-Od-3nR" secondAttribute="top" id="0M9-7X-isd"/>
+                <constraint firstItem="6HQ-NK-C1V" firstAttribute="leading" secondItem="vte-Ls-n07" secondAttribute="leading" id="5VJ-ho-kEU"/>
+                <constraint firstItem="b3Y-ng-lab" firstAttribute="leading" secondItem="Ato-Od-3nR" secondAttribute="leading" id="ALL-P2-Ej7"/>
+                <constraint firstItem="vte-Ls-n07" firstAttribute="trailing" secondItem="9Av-a7-2v8" secondAttribute="trailing" id="EBm-TJ-LvM"/>
+                <constraint firstItem="9Av-a7-2v8" firstAttribute="leading" secondItem="vte-Ls-n07" secondAttribute="leading" id="FsT-cA-4iG"/>
+                <constraint firstAttribute="bottom" secondItem="b3Y-ng-lab" secondAttribute="bottom" id="T9Q-YN-QGQ"/>
+                <constraint firstItem="vte-Ls-n07" firstAttribute="bottom" secondItem="9Av-a7-2v8" secondAttribute="bottom" id="aXx-Xu-cub"/>
+                <constraint firstItem="b3Y-ng-lab" firstAttribute="trailing" secondItem="Ato-Od-3nR" secondAttribute="trailing" id="hFl-PF-i9D"/>
+                <constraint firstItem="b3Y-ng-lab" firstAttribute="top" secondItem="6HQ-NK-C1V" secondAttribute="bottom" id="jza-YP-y89"/>
+                <constraint firstItem="vte-Ls-n07" firstAttribute="trailing" secondItem="6HQ-NK-C1V" secondAttribute="trailing" id="w2L-3V-biU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vte-Ls-n07"/>
+            <point key="canvasLocation" x="42" y="32"/>
+        </view>
+    </objects>
+</document>

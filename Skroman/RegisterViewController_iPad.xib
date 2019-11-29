@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAlreadyAMemberLogin" destination="oQz-lw-tNH" id="nMn-LL-WG0"/>
+                <outlet property="tableView" destination="HNs-eh-oT2" id="7Nr-mj-gBH"/>
+                <outlet property="view" destination="VNB-Po-96L" id="S85-LC-uwv"/>
+                <outlet property="vwConstant_iPadWidth" destination="dZk-FS-yvR" id="CSd-KH-TVa"/>
+                <outlet property="vwFixBottom" destination="EqR-oU-3s5" id="Dxj-MI-jrx"/>
+                <outlet property="vwSeprator" destination="8Xr-vF-Y33" id="Cno-LP-hW9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VNB-Po-96L">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCg-py-qtl">
+                    <rect key="frame" x="283.5" y="137" width="201" height="750"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HNs-eh-oT2" customClass="TPKeyboardAvoidingTableView">
+                            <rect key="frame" x="0.0" y="0.0" width="201" height="692"/>
+                            <color key="backgroundColor" red="0.10150200873613358" green="0.10856882482767105" blue="0.16660797595977783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="ZcQ-5R-xVL"/>
+                                <outlet property="delegate" destination="-1" id="Y10-q3-euv"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqR-oU-3s5" userLabel="vwBottomContainer">
+                            <rect key="frame" x="0.0" y="692" width="201" height="58"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xr-vF-Y33" userLabel="vwSeprator">
+                                    <rect key="frame" x="0.0" y="0.0" width="201" height="1"/>
+                                    <color key="backgroundColor" red="0.23137254900000001" green="0.24313725489999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="DDW-bh-B4e"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQz-lw-tNH">
+                                    <rect key="frame" x="0.0" y="1" width="201" height="57"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="57" id="Pcz-2I-Q03"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="Not a member? Register here"/>
+                                    <connections>
+                                        <action selector="tappedAlreadyAMember:" destination="-1" eventType="touchUpInside" id="W4O-zo-9KK"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1681466103" green="0.17511391640000001" blue="0.2414441705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="8Xr-vF-Y33" firstAttribute="top" secondItem="EqR-oU-3s5" secondAttribute="top" id="aYo-H1-RKM"/>
+                                <constraint firstItem="oQz-lw-tNH" firstAttribute="top" secondItem="8Xr-vF-Y33" secondAttribute="bottom" id="h0Y-cK-9Mn"/>
+                                <constraint firstAttribute="trailing" secondItem="8Xr-vF-Y33" secondAttribute="trailing" id="vcR-nu-JN8"/>
+                                <constraint firstItem="8Xr-vF-Y33" firstAttribute="leading" secondItem="EqR-oU-3s5" secondAttribute="leading" id="w9H-gx-OeH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="HNs-eh-oT2" firstAttribute="trailing" secondItem="yPh-ls-PZ0" secondAttribute="trailing" id="0wK-Uy-a4U"/>
+                        <constraint firstItem="oQz-lw-tNH" firstAttribute="leading" secondItem="yPh-ls-PZ0" secondAttribute="leading" id="4WO-0e-vQd"/>
+                        <constraint firstItem="oQz-lw-tNH" firstAttribute="bottom" secondItem="yPh-ls-PZ0" secondAttribute="bottom" id="7AC-qV-KtC"/>
+                        <constraint firstItem="HNs-eh-oT2" firstAttribute="leading" secondItem="yPh-ls-PZ0" secondAttribute="leading" id="BRu-ZA-ueC"/>
+                        <constraint firstItem="EqR-oU-3s5" firstAttribute="leading" secondItem="CCg-py-qtl" secondAttribute="leading" id="GAB-9p-pka"/>
+                        <constraint firstAttribute="height" constant="750" id="S9Q-9p-wiD"/>
+                        <constraint firstItem="yPh-ls-PZ0" firstAttribute="trailing" secondItem="oQz-lw-tNH" secondAttribute="trailing" id="Zxa-8x-pRH"/>
+                        <constraint firstAttribute="width" constant="201" id="dZk-FS-yvR"/>
+                        <constraint firstItem="HNs-eh-oT2" firstAttribute="top" secondItem="CCg-py-qtl" secondAttribute="top" id="oOU-2t-Nob"/>
+                        <constraint firstItem="EqR-oU-3s5" firstAttribute="top" secondItem="HNs-eh-oT2" secondAttribute="bottom" id="ua7-q9-z0n"/>
+                        <constraint firstItem="EqR-oU-3s5" firstAttribute="bottom" secondItem="CCg-py-qtl" secondAttribute="bottom" id="xHo-1o-SvR"/>
+                        <constraint firstItem="EqR-oU-3s5" firstAttribute="trailing" secondItem="CCg-py-qtl" secondAttribute="trailing" id="yqk-b8-Qfd"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="yPh-ls-PZ0"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CCg-py-qtl" firstAttribute="centerX" secondItem="VNB-Po-96L" secondAttribute="centerX" id="0PI-Y6-8hv"/>
+                <constraint firstItem="CCg-py-qtl" firstAttribute="centerY" secondItem="VNB-Po-96L" secondAttribute="centerY" id="uwE-Tm-HUV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="e8c-yN-rAO"/>
+            <point key="canvasLocation" x="-839" y="1586"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="T5b-wj-AaZ" customClass="SwitchForMoodSettingCollectionViewCell" customModule="Skroman" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="109"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-AB-E7b">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="109"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="type_0_1" translatesAutoresizingMaskIntoConstraints="NO" id="5ER-ZT-azN">
+                                <rect key="frame" x="0.0" y="0.0" width="105" height="109"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTr-Uy-xNE">
+                                <rect key="frame" x="81" y="8" width="16" height="16"/>
+                                <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="1Tr-UE-r3x"/>
+                                    <constraint firstAttribute="height" constant="16" id="cDd-Sy-jDV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ag4-Vs-xoV">
+                                <rect key="frame" x="8" y="109" width="89" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="3rJ-Sx-Lix"/>
+                                </constraints>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="trackTintColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCx-87-g12">
+                                <rect key="frame" x="8" y="109" width="89" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15639790889999999" green="0.16343885659999999" blue="0.22562581300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xCx-87-g12" secondAttribute="trailing" constant="8" id="6pX-D2-FDb"/>
+                            <constraint firstItem="BTr-Uy-xNE" firstAttribute="top" secondItem="hdY-AB-E7b" secondAttribute="top" constant="8" id="FgE-Rs-yzt"/>
+                            <constraint firstAttribute="trailing" secondItem="5ER-ZT-azN" secondAttribute="trailing" id="GxT-0x-pUI"/>
+                            <constraint firstItem="5ER-ZT-azN" firstAttribute="leading" secondItem="hdY-AB-E7b" secondAttribute="leading" id="P0m-fa-Cqa"/>
+                            <constraint firstItem="5ER-ZT-azN" firstAttribute="top" secondItem="hdY-AB-E7b" secondAttribute="top" id="aT2-3U-kzU"/>
+                            <constraint firstAttribute="trailing" secondItem="Ag4-Vs-xoV" secondAttribute="trailing" constant="8" id="dch-LF-Jqu"/>
+                            <constraint firstAttribute="bottom" secondItem="xCx-87-g12" secondAttribute="bottom" id="hI8-gP-Z0b"/>
+                            <constraint firstItem="Ag4-Vs-xoV" firstAttribute="top" secondItem="5ER-ZT-azN" secondAttribute="bottom" id="ptl-Z5-OOb"/>
+                            <constraint firstItem="Ag4-Vs-xoV" firstAttribute="leading" secondItem="hdY-AB-E7b" secondAttribute="leading" constant="8" id="qXd-gg-AWQ"/>
+                            <constraint firstItem="xCx-87-g12" firstAttribute="leading" secondItem="hdY-AB-E7b" secondAttribute="leading" constant="8" id="qZC-zy-Ewp"/>
+                            <constraint firstAttribute="trailing" secondItem="BTr-Uy-xNE" secondAttribute="trailing" constant="8" id="sQ8-1Q-cFE"/>
+                            <constraint firstItem="xCx-87-g12" firstAttribute="top" secondItem="Ag4-Vs-xoV" secondAttribute="bottom" id="uvo-dw-WRl"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFC-0J-0Q8">
+                        <rect key="frame" x="0.0" y="74" width="105" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="XdZ-7v-ukq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hdY-AB-E7b" firstAttribute="top" secondItem="T5b-wj-AaZ" secondAttribute="top" id="CiX-PL-i4N"/>
+                <constraint firstItem="EFC-0J-0Q8" firstAttribute="leading" secondItem="T5b-wj-AaZ" secondAttribute="leading" id="KRW-n3-9vV"/>
+                <constraint firstAttribute="trailing" secondItem="EFC-0J-0Q8" secondAttribute="trailing" id="KX8-Pw-TnP"/>
+                <constraint firstAttribute="bottom" secondItem="EFC-0J-0Q8" secondAttribute="bottom" id="TBT-Y2-UYd"/>
+                <constraint firstAttribute="bottom" secondItem="hdY-AB-E7b" secondAttribute="bottom" id="dtq-il-RtT"/>
+                <constraint firstAttribute="trailing" secondItem="hdY-AB-E7b" secondAttribute="trailing" id="eUn-FM-lKD"/>
+                <constraint firstItem="hdY-AB-E7b" firstAttribute="leading" secondItem="T5b-wj-AaZ" secondAttribute="leading" id="nWQ-SH-sHc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="cmN-hI-BUR"/>
+            <size key="customSize" width="105" height="196"/>
+            <connections>
+                <outlet property="constantProgressViewHight" destination="3rJ-Sx-Lix" id="1Sy-e9-0oc"/>
+                <outlet property="imagUsedFor" destination="5ER-ZT-azN" id="GH5-hW-U9S"/>
+                <outlet property="labelBottomSpace" destination="hI8-gP-Z0b" id="arK-ih-qrd"/>
+                <outlet property="lblSwitchNumber" destination="BTr-Uy-xNE" id="xgF-ab-4eX"/>
+                <outlet property="lblUsedFor" destination="xCx-87-g12" id="R4Q-qg-zr3"/>
+                <outlet property="progressView" destination="Ag4-Vs-xoV" id="TIZ-xy-IjN"/>
+                <outlet property="spaceBetweenProgressBarAndLabel" destination="uvo-dw-WRl" id="ffH-eC-r3O"/>
+                <outlet property="vwContainer" destination="hdY-AB-E7b" id="1ct-ih-gYc"/>
+                <outlet property="vwSteapper" destination="EFC-0J-0Q8" id="MD2-wf-hEm"/>
+            </connections>
+            <point key="canvasLocation" x="41.5" y="251.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="type_0_1" width="45" height="45"/>
+    </resources>
+</document>

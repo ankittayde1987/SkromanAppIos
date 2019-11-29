@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteOptionsPopupViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="btnClose" destination="n6T-tc-GfM" id="b06-SK-tf2"/>
+                <outlet property="btnLocally" destination="ohq-x8-ufX" id="VNs-S2-ts8"/>
+                <outlet property="btnPermanent" destination="DNY-2j-T4R" id="erl-H5-TFB"/>
+                <outlet property="lblPopupTitle" destination="nyh-jd-mmE" id="GVp-SP-OxA"/>
+                <outlet property="view" destination="wiq-uf-jlJ" id="Kq0-mJ-Pdd"/>
+                <outlet property="vwSeprator" destination="omr-yY-39C" id="ixe-NP-L6s"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="wiq-uf-jlJ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DELETE MOOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyh-jd-mmE">
+                    <rect key="frame" x="12" y="12" width="296" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="l9T-F2-WeX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omr-yY-39C">
+                    <rect key="frame" x="14" y="41" width="292" height="1"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.25098039220000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="F3F-F4-gq7"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6T-tc-GfM">
+                    <rect key="frame" x="280" y="5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="SAi-Mb-Z4l"/>
+                        <constraint firstAttribute="height" constant="35" id="Ze8-BI-W2a"/>
+                    </constraints>
+                    <state key="normal" image="new_close"/>
+                    <connections>
+                        <action selector="tappedOnClose:" destination="-1" eventType="touchUpInside" id="5rt-Pg-gbM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohq-x8-ufX">
+                    <rect key="frame" x="12" y="62" width="296" height="40"/>
+                    <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Dfq-Ii-W9a"/>
+                    </constraints>
+                    <state key="normal" title="Locally"/>
+                    <connections>
+                        <action selector="tappedOnLocally:" destination="-1" eventType="touchUpInside" id="aWt-LH-yrz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNY-2j-T4R">
+                    <rect key="frame" x="12" y="120" width="296" height="40"/>
+                    <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Sa0-9i-ESK"/>
+                    </constraints>
+                    <state key="normal" title="Permanantly"/>
+                    <connections>
+                        <action selector="tappedOnPermanently:" destination="-1" eventType="touchUpInside" id="3Ci-xO-P5Y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1019607843" green="0.10980392160000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GOD-pw-Nju" firstAttribute="bottom" secondItem="DNY-2j-T4R" secondAttribute="bottom" constant="20" id="1vH-Pr-bmE"/>
+                <constraint firstItem="nyh-jd-mmE" firstAttribute="leading" secondItem="GOD-pw-Nju" secondAttribute="leading" constant="12" id="2rc-eX-e2F"/>
+                <constraint firstItem="DNY-2j-T4R" firstAttribute="leading" secondItem="GOD-pw-Nju" secondAttribute="leading" constant="12" id="4xx-T0-ExY"/>
+                <constraint firstItem="ohq-x8-ufX" firstAttribute="leading" secondItem="GOD-pw-Nju" secondAttribute="leading" constant="12" id="BAq-3i-Hey"/>
+                <constraint firstItem="GOD-pw-Nju" firstAttribute="trailing" secondItem="nyh-jd-mmE" secondAttribute="trailing" constant="12" id="Db2-eF-amg"/>
+                <constraint firstItem="n6T-tc-GfM" firstAttribute="top" secondItem="GOD-pw-Nju" secondAttribute="top" constant="5" id="HCR-cw-hAp"/>
+                <constraint firstItem="ohq-x8-ufX" firstAttribute="top" secondItem="omr-yY-39C" secondAttribute="bottom" constant="20" id="KkI-x4-Oqo"/>
+                <constraint firstItem="DNY-2j-T4R" firstAttribute="top" secondItem="ohq-x8-ufX" secondAttribute="bottom" constant="18" id="O3h-Yn-DHx"/>
+                <constraint firstAttribute="trailing" secondItem="omr-yY-39C" secondAttribute="trailing" constant="14" id="RJ1-GX-7q4"/>
+                <constraint firstItem="GOD-pw-Nju" firstAttribute="trailing" secondItem="DNY-2j-T4R" secondAttribute="trailing" constant="12" id="RXw-Qp-IHn"/>
+                <constraint firstItem="GOD-pw-Nju" firstAttribute="trailing" secondItem="n6T-tc-GfM" secondAttribute="trailing" constant="5" id="YTU-st-UwP"/>
+                <constraint firstItem="omr-yY-39C" firstAttribute="top" secondItem="n6T-tc-GfM" secondAttribute="bottom" constant="1" id="fE9-5u-iom"/>
+                <constraint firstItem="omr-yY-39C" firstAttribute="leading" secondItem="wiq-uf-jlJ" secondAttribute="leading" constant="14" id="itm-ct-RuD"/>
+                <constraint firstItem="GOD-pw-Nju" firstAttribute="trailing" secondItem="ohq-x8-ufX" secondAttribute="trailing" constant="12" id="pLK-6n-nEY"/>
+                <constraint firstItem="nyh-jd-mmE" firstAttribute="top" secondItem="GOD-pw-Nju" secondAttribute="top" constant="12" id="qQo-Mr-Mdi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="GOD-pw-Nju"/>
+            <point key="canvasLocation" x="25" y="-37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_close" width="16" height="16"/>
+    </resources>
+</document>

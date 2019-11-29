@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Medium.otf">
+            <string>SanFranciscoText-Medium</string>
+        </array>
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+        <array key="Titillium-Semibold.otf">
+            <string>Titillium-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="btnForgotPassword" destination="Ndb-7u-8qb" id="oBs-cA-EJ2"/>
+                <outlet property="btnGoogleLogin" destination="sFY-KU-Qfg" id="vjc-o7-eHQ"/>
+                <outlet property="btnLogin" destination="dPf-Z0-Mxu" id="6CD-1k-a4g"/>
+                <outlet property="btnNotAMember" destination="xG2-o3-KWF" id="EbV-Eb-Xwj"/>
+                <outlet property="btnSecureText" destination="Yi6-Sy-0h0" id="Yex-jh-Z4t"/>
+                <outlet property="imagGoogle" destination="yT0-Wu-Pfx" id="sCh-Bb-fuh"/>
+                <outlet property="imagSmallAppLogo" destination="157-GN-5Ex" id="b2p-b7-a7B"/>
+                <outlet property="lblAppName" destination="Jcn-Z7-77v" id="vh4-RS-csz"/>
+                <outlet property="lblLoginWithGoogle" destination="HVs-iF-7Uo" id="AfN-Rl-890"/>
+                <outlet property="lblPleaseContinueLogin" destination="mOC-N5-4ae" id="SS3-lf-o34"/>
+                <outlet property="scrollView" destination="Car-SH-Nu7" id="0TP-M9-UmI"/>
+                <outlet property="txtEmail" destination="NU9-oa-7qu" id="Zre-sw-dTt"/>
+                <outlet property="txtPassword" destination="t78-fg-cD4" id="i42-XH-iJB"/>
+                <outlet property="view" destination="ZGr-cO-T88" id="vBl-ak-6dY"/>
+                <outlet property="vwConstant_iPadWidth" destination="tYy-jP-IaM" id="s8d-7g-0HF"/>
+                <outlet property="vwEmailAndPasswordSeprator" destination="gDr-2D-ubZ" id="Eiy-O1-K7Y"/>
+                <outlet property="vwGoogleButtonContainer" destination="bBr-vh-RNe" id="rF2-E3-0RF"/>
+                <outlet property="vwLogoAndAppNameContainer" destination="2vv-ao-uNu" id="Rmy-ow-O44"/>
+                <outlet property="vwMainBottomContainer" destination="9i4-YH-rVi" id="3ND-h1-34e"/>
+                <outlet property="vwRegisterNowContainer" destination="m1r-EU-MME" id="4ZS-Gt-cQW"/>
+                <outlet property="vwTextFieldContainer" destination="0al-kE-EOI" id="GOJ-iv-oSu"/>
+                <outlet property="vwTopSeprator" destination="DnX-63-DBX" id="EDT-Cx-QK7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZGr-cO-T88">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="209" y="138" width="350" height="748"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Car-SH-Nu7" customClass="TPKeyboardAvoidingScrollView">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="690"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6t-Cg-q4w" userLabel="View Top Space">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="112"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vv-ao-uNu" userLabel="vwScrollTop">
+                                    <rect key="frame" x="0.0" y="112" width="350" height="126"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small_logo" translatesAutoresizingMaskIntoConstraints="NO" id="157-GN-5Ex">
+                                            <rect key="frame" x="146.5" y="0.0" width="57" height="93"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skroman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-Z7-77v">
+                                            <rect key="frame" x="36" y="101" width="278" height="25"/>
+                                            <fontDescription key="fontDescription" name="Titillium-Semibold" family="Titillium" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96389248699999996" green="0.17984458910000001" blue="0.19308948540000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Jcn-Z7-77v" firstAttribute="top" secondItem="157-GN-5Ex" secondAttribute="bottom" constant="8" id="EwL-PN-pcz"/>
+                                        <constraint firstAttribute="bottom" secondItem="Jcn-Z7-77v" secondAttribute="bottom" id="W6D-JT-R5e"/>
+                                        <constraint firstItem="Jcn-Z7-77v" firstAttribute="leading" secondItem="2vv-ao-uNu" secondAttribute="leading" constant="36" id="fp0-Qa-2IF"/>
+                                        <constraint firstItem="157-GN-5Ex" firstAttribute="centerX" secondItem="2vv-ao-uNu" secondAttribute="centerX" id="s6e-Fz-r9e"/>
+                                        <constraint firstItem="157-GN-5Ex" firstAttribute="top" secondItem="2vv-ao-uNu" secondAttribute="top" id="sdF-lq-LDs"/>
+                                        <constraint firstAttribute="trailing" secondItem="Jcn-Z7-77v" secondAttribute="trailing" constant="36" id="yoc-K9-oxr"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAI-XW-2Ym" userLabel="View Middle Space">
+                                    <rect key="frame" x="0.0" y="238" width="350" height="70.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9i4-YH-rVi" userLabel="vwScrollBottom">
+                                    <rect key="frame" x="36" y="308.5" width="278" height="277"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-N5-4ae">
+                                            <rect key="frame" x="0.0" y="0.0" width="278" height="24"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.10150200873613358" green="0.10856882482767105" blue="0.16660797595977783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0al-kE-EOI" userLabel="vwTextFieldContainer">
+                                            <rect key="frame" x="0.0" y="48" width="278" height="87"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NU9-oa-7qu">
+                                                    <rect key="frame" x="15" y="0.0" width="248" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="gVp-QA-cUl"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDr-2D-ubZ">
+                                                    <rect key="frame" x="0.0" y="42" width="278" height="3"/>
+                                                    <color key="backgroundColor" red="0.2196078431372549" green="0.22745098039215686" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="3" id="deg-oj-3IN"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t78-fg-cD4">
+                                                    <rect key="frame" x="15" y="45" width="213" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="XRS-ej-SQn"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yi6-Sy-0h0">
+                                                    <rect key="frame" x="230" y="45" width="40" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="iM5-Et-0MM"/>
+                                                    </constraints>
+                                                    <state key="normal" image="icon_password_hide"/>
+                                                    <state key="selected" image="icon_password_show"/>
+                                                    <connections>
+                                                        <action selector="tappedOnSecureText:" destination="-1" eventType="touchUpInside" id="uaX-Yf-Vv8"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.1758568287" green="0.18680390720000001" blue="0.25729316470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="t78-fg-cD4" secondAttribute="bottom" id="0bR-9T-Ock"/>
+                                                <constraint firstItem="Yi6-Sy-0h0" firstAttribute="top" secondItem="gDr-2D-ubZ" secondAttribute="bottom" id="20I-F9-DmZ"/>
+                                                <constraint firstItem="t78-fg-cD4" firstAttribute="leading" secondItem="0al-kE-EOI" secondAttribute="leading" constant="15" id="2nw-LM-yzL"/>
+                                                <constraint firstAttribute="trailing" secondItem="gDr-2D-ubZ" secondAttribute="trailing" id="572-1X-zWz"/>
+                                                <constraint firstAttribute="trailing" secondItem="Yi6-Sy-0h0" secondAttribute="trailing" constant="8" id="5FU-N1-OSw"/>
+                                                <constraint firstItem="t78-fg-cD4" firstAttribute="top" secondItem="gDr-2D-ubZ" secondAttribute="bottom" id="7vd-ck-ndD"/>
+                                                <constraint firstItem="Yi6-Sy-0h0" firstAttribute="leading" secondItem="t78-fg-cD4" secondAttribute="trailing" constant="2" id="G3A-lX-ghL"/>
+                                                <constraint firstItem="gDr-2D-ubZ" firstAttribute="leading" secondItem="0al-kE-EOI" secondAttribute="leading" id="Pkt-t1-jL2"/>
+                                                <constraint firstAttribute="trailing" secondItem="NU9-oa-7qu" secondAttribute="trailing" constant="15" id="e6T-Ab-AWS"/>
+                                                <constraint firstItem="NU9-oa-7qu" firstAttribute="top" secondItem="0al-kE-EOI" secondAttribute="top" id="r97-bS-CNN"/>
+                                                <constraint firstItem="NU9-oa-7qu" firstAttribute="leading" secondItem="0al-kE-EOI" secondAttribute="leading" constant="15" id="s6j-pu-Sft"/>
+                                                <constraint firstAttribute="bottom" secondItem="Yi6-Sy-0h0" secondAttribute="bottom" id="wDn-eU-Iem"/>
+                                                <constraint firstItem="gDr-2D-ubZ" firstAttribute="top" secondItem="NU9-oa-7qu" secondAttribute="bottom" id="yqH-MG-oJ4"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndb-7u-8qb">
+                                            <rect key="frame" x="148" y="135" width="130" height="38"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                                            <inset key="contentEdgeInsets" minX="0.0" minY="9" maxX="0.0" maxY="9"/>
+                                            <state key="normal" title="Forgot Password?"/>
+                                            <connections>
+                                                <action selector="tappedForgotPassword:" destination="-1" eventType="touchUpInside" id="EvH-SS-ASr"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-Z0-Mxu" customClass="RNLoadingButton" customModule="RNLoadingButton_Swift">
+                                            <rect key="frame" x="0.0" y="185" width="278" height="40"/>
+                                            <color key="backgroundColor" red="0.2520507276058197" green="0.3745705783367157" blue="0.97985750436782837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="E13-fs-HvE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="16"/>
+                                            <state key="normal" title="LOGIN"/>
+                                            <connections>
+                                                <action selector="tappedLogin:" destination="-1" eventType="touchUpInside" id="e4z-4C-iKJ"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBr-vh-RNe" userLabel="GoogleButton">
+                                            <rect key="frame" x="0.0" y="237" width="278" height="40"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:yT0-Wu-Pfx:image" translatesAutoresizingMaskIntoConstraints="NO" id="yT0-Wu-Pfx">
+                                                    <rect key="frame" x="21" y="12.5" width="24" height="15"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN USING GOOGLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVs-iF-7Uo">
+                                                    <rect key="frame" x="60" y="10.5" width="158.5" height="19"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFY-KU-Qfg" customClass="RNLoadingButton" customModule="RNLoadingButton_Swift">
+                                                    <rect key="frame" x="0.0" y="0.0" width="278" height="40"/>
+                                                    <connections>
+                                                        <action selector="tappedGoogleLogin:" destination="-1" eventType="touchUpInside" id="lNa-bb-mUO"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.76440948249999996" green="0.3060941398" blue="0.30761501190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="sFY-KU-Qfg" firstAttribute="leading" secondItem="bBr-vh-RNe" secondAttribute="leading" id="6qG-6P-qOZ"/>
+                                                <constraint firstAttribute="height" constant="40" id="Amv-kG-yXX"/>
+                                                <constraint firstItem="HVs-iF-7Uo" firstAttribute="leading" secondItem="yT0-Wu-Pfx" secondAttribute="trailing" constant="15" id="UcV-q0-9WT"/>
+                                                <constraint firstAttribute="bottom" secondItem="sFY-KU-Qfg" secondAttribute="bottom" id="Zgr-ea-je3"/>
+                                                <constraint firstItem="HVs-iF-7Uo" firstAttribute="centerX" secondItem="bBr-vh-RNe" secondAttribute="centerX" id="glz-ef-Swn"/>
+                                                <constraint firstAttribute="trailing" secondItem="sFY-KU-Qfg" secondAttribute="trailing" id="inI-7x-eeF"/>
+                                                <constraint firstItem="sFY-KU-Qfg" firstAttribute="top" secondItem="bBr-vh-RNe" secondAttribute="top" id="jgo-6Q-2IE"/>
+                                                <constraint firstItem="yT0-Wu-Pfx" firstAttribute="centerY" secondItem="bBr-vh-RNe" secondAttribute="centerY" id="sxT-AN-XFk"/>
+                                                <constraint firstItem="HVs-iF-7Uo" firstAttribute="centerY" secondItem="bBr-vh-RNe" secondAttribute="centerY" id="uy1-Q4-p7e"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="bBr-vh-RNe" secondAttribute="bottom" id="2Fh-cw-zNc"/>
+                                        <constraint firstItem="mOC-N5-4ae" firstAttribute="top" secondItem="9i4-YH-rVi" secondAttribute="top" id="2GM-BF-2W2"/>
+                                        <constraint firstItem="bBr-vh-RNe" firstAttribute="top" secondItem="dPf-Z0-Mxu" secondAttribute="bottom" constant="12" id="7EX-6a-6DG"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ndb-7u-8qb" secondAttribute="trailing" id="7ny-aI-ui4"/>
+                                        <constraint firstItem="dPf-Z0-Mxu" firstAttribute="top" secondItem="Ndb-7u-8qb" secondAttribute="bottom" constant="12" id="GTa-pO-qct"/>
+                                        <constraint firstAttribute="trailing" secondItem="mOC-N5-4ae" secondAttribute="trailing" id="JCH-Q3-lyd"/>
+                                        <constraint firstAttribute="trailing" secondItem="0al-kE-EOI" secondAttribute="trailing" id="Va4-uq-Uhl"/>
+                                        <constraint firstItem="Ndb-7u-8qb" firstAttribute="top" secondItem="0al-kE-EOI" secondAttribute="bottom" id="Wdj-ew-6NF"/>
+                                        <constraint firstItem="bBr-vh-RNe" firstAttribute="leading" secondItem="9i4-YH-rVi" secondAttribute="leading" id="cwB-tS-IWV"/>
+                                        <constraint firstItem="0al-kE-EOI" firstAttribute="top" secondItem="mOC-N5-4ae" secondAttribute="bottom" constant="24" id="gih-ug-4qc"/>
+                                        <constraint firstAttribute="trailing" secondItem="dPf-Z0-Mxu" secondAttribute="trailing" id="rH3-zh-sMU"/>
+                                        <constraint firstItem="mOC-N5-4ae" firstAttribute="leading" secondItem="9i4-YH-rVi" secondAttribute="leading" id="tls-sY-8hc"/>
+                                        <constraint firstAttribute="trailing" secondItem="bBr-vh-RNe" secondAttribute="trailing" id="uT7-6s-gqt"/>
+                                        <constraint firstItem="dPf-Z0-Mxu" firstAttribute="leading" secondItem="9i4-YH-rVi" secondAttribute="leading" id="wBB-rX-UsY"/>
+                                        <constraint firstItem="0al-kE-EOI" firstAttribute="leading" secondItem="9i4-YH-rVi" secondAttribute="leading" id="xnz-xf-8RG"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="mAI-XW-2Ym" secondAttribute="trailing" id="5IM-sr-yBG"/>
+                                <constraint firstItem="2vv-ao-uNu" firstAttribute="leading" secondItem="Car-SH-Nu7" secondAttribute="leading" id="ANe-Ok-p0z"/>
+                                <constraint firstItem="mAI-XW-2Ym" firstAttribute="top" secondItem="2vv-ao-uNu" secondAttribute="bottom" id="FZb-Dv-tnC"/>
+                                <constraint firstAttribute="trailing" secondItem="2vv-ao-uNu" secondAttribute="trailing" id="GBw-Z3-eyY"/>
+                                <constraint firstItem="mAI-XW-2Ym" firstAttribute="leading" secondItem="Car-SH-Nu7" secondAttribute="leading" id="GQb-sL-tL5"/>
+                                <constraint firstAttribute="trailing" secondItem="9i4-YH-rVi" secondAttribute="trailing" constant="36" id="M9M-xg-ZPj"/>
+                                <constraint firstItem="M6t-Cg-q4w" firstAttribute="top" secondItem="Car-SH-Nu7" secondAttribute="top" id="Oed-tK-uOT"/>
+                                <constraint firstItem="9i4-YH-rVi" firstAttribute="leading" secondItem="Car-SH-Nu7" secondAttribute="leading" constant="36" id="Zdq-xb-oX5"/>
+                                <constraint firstAttribute="trailing" secondItem="M6t-Cg-q4w" secondAttribute="trailing" id="aLf-uk-N4q"/>
+                                <constraint firstItem="M6t-Cg-q4w" firstAttribute="centerX" secondItem="Car-SH-Nu7" secondAttribute="centerX" id="cLu-WN-LN7"/>
+                                <constraint firstItem="M6t-Cg-q4w" firstAttribute="leading" secondItem="Car-SH-Nu7" secondAttribute="leading" id="ftU-kR-xjg"/>
+                                <constraint firstItem="9i4-YH-rVi" firstAttribute="top" secondItem="mAI-XW-2Ym" secondAttribute="bottom" id="qJX-65-x16"/>
+                                <constraint firstItem="2vv-ao-uNu" firstAttribute="top" secondItem="M6t-Cg-q4w" secondAttribute="bottom" id="v3X-NW-ivT"/>
+                                <constraint firstAttribute="bottom" secondItem="9i4-YH-rVi" secondAttribute="bottom" constant="47" id="xtM-Tc-qwm"/>
+                            </constraints>
+                        </scrollView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1r-EU-MME" userLabel="vwBottomContainer">
+                            <rect key="frame" x="0.0" y="690" width="350" height="58"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-63-DBX" userLabel="vwSeprator">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="1"/>
+                                    <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Mo1-7y-zH4"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG2-o3-KWF">
+                                    <rect key="frame" x="0.0" y="1" width="350" height="57"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="57" id="6ht-B1-vxV"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="Not a member? Register here"/>
+                                    <connections>
+                                        <action selector="tappedRegisterHere:" destination="-1" eventType="touchUpInside" id="T89-r9-YAz"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="DnX-63-DBX" firstAttribute="leading" secondItem="m1r-EU-MME" secondAttribute="leading" id="CO8-xY-ihr"/>
+                                <constraint firstItem="DnX-63-DBX" firstAttribute="top" secondItem="m1r-EU-MME" secondAttribute="top" id="XVQ-DH-faX"/>
+                                <constraint firstItem="xG2-o3-KWF" firstAttribute="top" secondItem="DnX-63-DBX" secondAttribute="bottom" id="YO4-x8-hog"/>
+                                <constraint firstAttribute="trailing" secondItem="DnX-63-DBX" secondAttribute="trailing" id="rIg-WM-97K"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="m1r-EU-MME" firstAttribute="top" secondItem="Car-SH-Nu7" secondAttribute="bottom" id="3BM-co-AJ9"/>
+                        <constraint firstAttribute="bottom" secondItem="m1r-EU-MME" secondAttribute="bottom" id="EXz-vY-oR2"/>
+                        <constraint firstItem="M6t-Cg-q4w" firstAttribute="height" secondItem="Car-SH-Nu7" secondAttribute="height" multiplier="0.162562" id="N31-oP-jgK"/>
+                        <constraint firstItem="m1r-EU-MME" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ne2-Gp-4Cv"/>
+                        <constraint firstItem="Car-SH-Nu7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PVU-Cp-GQN"/>
+                        <constraint firstItem="xG2-o3-KWF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QPh-QJ-yU8"/>
+                        <constraint firstItem="Car-SH-Nu7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="agU-Wu-YDh"/>
+                        <constraint firstAttribute="height" constant="748" id="j8p-nQ-ZL4"/>
+                        <constraint firstItem="Car-SH-Nu7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ksg-aM-itr"/>
+                        <constraint firstItem="mAI-XW-2Ym" firstAttribute="height" secondItem="Car-SH-Nu7" secondAttribute="height" multiplier="0.101806" id="oRj-sH-Re2"/>
+                        <constraint firstItem="m1r-EU-MME" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="pFN-kt-glW"/>
+                        <constraint firstAttribute="width" constant="350" id="tYy-jP-IaM"/>
+                        <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xG2-o3-KWF" secondAttribute="trailing" id="xKM-OQ-AJd"/>
+                        <constraint firstItem="xG2-o3-KWF" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="yuN-uE-6aP"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="centerX" secondItem="ZGr-cO-T88" secondAttribute="centerX" id="c2Y-Gi-nr2"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="centerY" secondItem="ZGr-cO-T88" secondAttribute="centerY" id="u3x-7P-njk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8XJ-hN-Xza"/>
+            <point key="canvasLocation" x="145" y="-48"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_password_hide" width="28" height="22"/>
+        <image name="icon_password_show" width="29" height="21"/>
+        <image name="imageView:yT0-Wu-Pfx:image" width="24" height="15">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGVVZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
+ExQZHh8jJCsuMTtDR0tPUlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdz
+Vk5TUmVwc1dOU0NvbG9ygAKAERIgwAAAgAOAC1h7MjQsIDE1fdIVChYYWk5TLm9iamVjdHOhF4AEgArS
+FQoaHaIbHIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPEQ5WTU0AKgAABagA
+AAAAAAAAAAAAAAAAAAAAICAgIHZ2dnbQ0NDQ9fX19erq6uqurq6uSkpKSgYGBgYAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgICAh8fHx85+fn5///////
+/////////////////////////8DAwMA2NjY2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAACwsLC6mpqan////////////////Y2NjYvLy8vMbGxsby8vLy//////b29vZN
+TU1NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAi4uLi///////
+////2tra2lNTU1MRERERAAAAAAYGBgYtLS0tl5eXl0dHR0cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ
+CQkJZWVlZXZ2dnYuLi4uAAAAAAAAAAAtLS0t8/Pz8//////g4ODgJiYmJgAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODg4O5eXl5f////9jY2NjAAAAAAAAAACZ
+mZmZ//////////9vb29vAAAAAAAAAAAAAAAANTU1NVBQUFBOTk5OTk5OTk5OTk5OTk5OT09PT0BAQEAA
+AAAAGRkZGU5OTk5dXV1d5+fn5/////+UlJSUTU1NTU5OTk7k5OTk//////z8/PwvLy8vAAAAAAAAAAAA
+AAAAsbGxsf///////////////////////////////+Hh4eEAAAAAU1NTU///////////////////////
+///////////////z8/Pz//////v7+/stLS0tAAAAAAAAAAAAAAAAlJSUlNzc3Nza2tra2tra2tzc3Nz+
+/v7+/////9/f398AAAAARUVFRdvb29vd3d3d+vr6+v/////p6enp2dnZ2dra2trCwsLC//////////9p
+aWlpAAAAAAAAAAAAAAAABgYGBgoKCgoJCQkJCAgICEJCQkL7+/v7/////8LCwsICAgICAwMDAwkJCQke
+Hh4e4eHh4f////9ra2trCQkJCQkJCQlXV1dX///////////c3NzcIiIiIgAAAAAAAAAAAAAAAAAAAAAA
+AAAABAQEBK6urq7//////////4ODg4MAAAAAAAAAAAAAAAASEhISz8/Pz+/v7+9dXV1dAAAAAAAAAAAK
+CgoKxMTExP//////////19fX11BQUFARERERAgICAggICAgqKioqpqampv//////////8/Pz8yoqKioA
+AAAAAAAAAAAAAAADAwMDHx8fHyUlJSUODg4OAAAAAAAAAAAAAAAANDQ0NObm5ub////////////////a
+2travb29vcjIyMjy8vLy////////////////dXV1dQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAADo6OjrQ0NDQ//////////////////////////////////////j4+Ph9
+fX19AwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU
+FBQUdHR0dMjIyMjp6enp9vb29vLy8vLc3Nzcpqampj4+Pj4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAwMiIiIiMDAwMCsrKysU
+FBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+EAEAAAMAAAABABgAAAEBAAMAAAABAA8AAAECAAMAAAAEAAAGbgEDAAMAAAABAAEAAAEGAAMAAAABAAIA
+AAEKAAMAAAABAAEAAAERAAQAAAABAAAACAESAAMAAAABAAEAAAEVAAMAAAABAAQAAAEWAAMAAAABAA8A
+AAEXAAQAAAABAAAFoAEcAAMAAAABAAEAAAEoAAMAAAABAAIAAAFSAAMAAAABAAEAAAFTAAMAAAAEAAAG
+dodzAAcAAAfYAAAGfgAAAAAACAAIAAgACAABAAEAAQABAAAH2GFwcGwCIAAAbW50clJHQiBYWVogB9kA
+AgAZAAsAGgALYWNzcEFQUEwAAAAAYXBwbAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALZGVzYwAAAQgAAABvZHNj
+bQAAAXgAAAWcY3BydAAABxQAAAA4d3RwdAAAB0wAAAAUclhZWgAAB2AAAAAUZ1hZWgAAB3QAAAAUYlhZ
+WgAAB4gAAAAUclRSQwAAB5wAAAAOY2hhZAAAB6wAAAAsYlRSQwAAB5wAAAAOZ1RSQwAAB5wAAAAOZGVz
+YwAAAAAAAAAUR2VuZXJpYyBSR0IgUHJvZmlsZQAAAAAAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAAAAAA
+HwAAAAxza1NLAAAAKAAAAYRkYURLAAAALgAAAaxjYUVTAAAAJAAAAdp2aVZOAAAAJAAAAf5wdEJSAAAA
+JgAAAiJ1a1VBAAAAKgAAAkhmckZVAAAAKAAAAnJodUhVAAAAKAAAApp6aFRXAAAAFgAAAsJuYk5PAAAA
+JgAAAthjc0NaAAAAIgAAAv5oZUlMAAAAHgAAAyBpdElUAAAAKAAAAz5yb1JPAAAAJAAAA2ZkZURFAAAA
+LAAAA4prb0tSAAAAFgAAA7ZzdlNFAAAAJgAAAth6aENOAAAAFgAAA8xqYUpQAAAAGgAAA+JlbEdSAAAA
+IgAAA/xwdFBPAAAAJgAABB5ubE5MAAAAKAAABERlc0VTAAAAJgAABB50aFRIAAAAJAAABGx0clRSAAAA
+IgAABJBmaUZJAAAAKAAABLJockhSAAAAKAAABNpwbFBMAAAALAAABQJydVJVAAAAIgAABS5hckVHAAAA
+JgAABVBlblVTAAAAJgAABXYAVgFhAGUAbwBiAGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsAEcA
+ZQBuAGUAcgBlAGwAIABSAEcAQgAtAGIAZQBzAGsAcgBpAHYAZQBsAHMAZQBQAGUAcgBmAGkAbAAgAFIA
+RwBCACAAZwBlAG4A6AByAGkAYwBDHqUAdQAgAGgA7ABuAGgAIABSAEcAQgAgAEMAaAB1AG4AZwBQAGUA
+cgBmAGkAbAAgAFIARwBCACAARwBlAG4A6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5ACAEPwRABD4E
+RAQwBDkEOwAgAFIARwBCAFAAcgBvAGYAaQBsACAAZwDpAG4A6QByAGkAcQB1AGUAIABSAFYAQgDBAGwA
+dABhAGwA4QBuAG8AcwAgAFIARwBCACAAcAByAG8AZgBpAGyQGnUoACAAUgBHAEIAIIJyX2ljz4/wAEcA
+ZQBuAGUAcgBpAHMAawAgAFIARwBCAC0AcAByAG8AZgBpAGwATwBiAGUAYwBuAP0AIABSAEcAQgAgAHAA
+cgBvAGYAaQBsBeQF6AXVBeQF2QXcACAAUgBHAEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBsAG8AIABSAEcA
+QgAgAGcAZQBuAGUAcgBpAGMAbwBQAHIAbwBmAGkAbAAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBBAGwA
+bABnAGUAbQBlAGkAbgBlAHMAIABSAEcAQgAtAFAAcgBvAGYAaQBsx3y8GAAgAFIARwBCACDVBLhc0wzH
+fGZukBoAIABSAEcAQgAgY8+P8GWHTvZOAIIsACAAUgBHAEIAIDDXMO0w1TChMKQw6wOTA7UDvQO5A7oD
+zAAgA8ADwQO/A8YDrwO7ACAAUgBHAEIAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOkAcgBpAGMA
+bwBBAGwAZwBlAG0AZQBlAG4AIABSAEcAQgAtAHAAcgBvAGYAaQBlAGwOQg4bDiMORA4fDiUOTAAgAFIA
+RwBCACAOFw4xDkgOJw5EDhsARwBlAG4AZQBsACAAUgBHAEIAIABQAHIAbwBmAGkAbABpAFkAbABlAGkA
+bgBlAG4AIABSAEcAQgAtAHAAcgBvAGYAaQBpAGwAaQBHAGUAbgBlAHIAaQENAGsAaQAgAFIARwBCACAA
+cAByAG8AZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8AZgBpAGwAIABSAEcAQgQeBDEE
+SQQ4BDkAIAQ/BEAEPgREBDgEOwRMACAAUgBHAEIGRQZEBkEAIAYqBjkGMQZKBkEAIABSAEcAQgAgBicG
+RAY5BicGRQBHAGUAbgBlAHIAaQBjACAAUgBHAEIAIABQAHIAbwBmAGkAbABldGV4dAAAAABDb3B5cmln
+aHQgMjAwNyBBcHBsZSBJbmMuLCBhbGwgcmlnaHRzIHJlc2VydmVkLgBYWVogAAAAAAAA81IAAQAAAAEW
+z1hZWiAAAAAAAAB0TQAAPe4AAAPQWFlaIAAAAAAAAFp1AACscwAAFzRYWVogAAAAAAAAKBoAABWfAAC4
+NmN1cnYAAAAAAAAAAQHNAABzZjMyAAAAAAABDEIAAAXe///zJgAAB5IAAP2R///7ov///aMAAAPcAADA
+bNIlJicoWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU0JpdG1hcEltYWdlUmVwoycpKlpOU0ltYWdlUmVw
+WE5TT2JqZWN00iUmLC1XTlNBcnJheaIsKtIlJi8wXk5TTXV0YWJsZUFycmF5oy8sKtUyMzQ1CjY3ODk6
+V05TV2hpdGVcTlNDb21wb25lbnRzXE5TQ29sb3JTcGFjZV8QEk5TQ3VzdG9tQ29sb3JTcGFjZUQwIDAA
+QzAgMBADgAyAENQ8PT4KP0BBQlROU0lEVU5TSUNDV05TTW9kZWwQCYANEACAD9JECkVGV05TLmRhdGFP
+ERFoAAARaGFwcGwCAAAAbW50ckdSQVlYWVogB9wACAAXAA8ALgAPYWNzcEFQUEwAAAAAbm9uZQAAAAAA
+AAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAFZGVzYwAAAMAAAAB5ZHNjbQAAATwAAAfoY3BydAAACSQAAAAjd3RwdAAACUgA
+AAAUa1RSQwAACVwAAAgMZGVzYwAAAAAAAAAfR2VuZXJpYyBHcmF5IEdhbW1hIDIuMiBQcm9maWxlAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAAAAAAHwAAAAxza1NLAAAALgAAAYRkYURLAAAAOAAAAbJj
+YUVTAAAAOAAAAep2aVZOAAAAQAAAAiJwdEJSAAAASgAAAmJ1a1VBAAAALAAAAqxmckZVAAAAPgAAAtho
+dUhVAAAANAAAAxZ6aFRXAAAAHgAAA0puYk5PAAAAOgAAA2hjc0NaAAAAKAAAA6JoZUlMAAAAJAAAA8pp
+dElUAAAATgAAA+5yb1JPAAAAKgAABDxkZURFAAAATgAABGZrb0tSAAAAIgAABLRzdlNFAAAAOAAAAbJ6
+aENOAAAAHgAABNZqYUpQAAAAJgAABPRlbEdSAAAAKgAABRpwdFBPAAAAUgAABURubE5MAAAAQAAABZZl
+c0VTAAAATAAABdZ0aFRIAAAAMgAABiJ0clRSAAAAJAAABlRmaUZJAAAARgAABnhockhSAAAAPgAABr5w
+bFBMAAAASgAABvxydVJVAAAAOgAAB0ZlblVTAAAAPAAAB4BhckVHAAAALAAAB7wAVgFhAGUAbwBiAGUA
+YwBuAOEAIABzAGkAdgDhACAAZwBhAG0AYQAgADIALAAyAEcAZQBuAGUAcgBpAHMAawAgAGcAcgDlACAA
+MgAsADIAIABnAGEAbQBtAGEAcAByAG8AZgBpAGwARwBhAG0AbQBhACAAZABlACAAZwByAGkAcwBvAHMA
+IABnAGUAbgDoAHIAaQBjAGEAIAAyAC4AMgBDHqUAdQAgAGgA7ABuAGgAIABNAOAAdQAgAHgA4QBtACAA
+QwBoAHUAbgBnACAARwBhAG0AbQBhACAAMgAuADIAUABlAHIAZgBpAGwAIABHAGUAbgDpAHIAaQBjAG8A
+IABkAGEAIABHAGEAbQBhACAAZABlACAAQwBpAG4AegBhAHMAIAAyACwAMgQXBDAEMwQwBDsETAQ9BDAA
+IABHAHIAYQB5AC0EMwQwBDwEMAAgADIALgAyAFAAcgBvAGYAaQBsACAAZwDpAG4A6QByAGkAcQB1AGUA
+IABnAHIAaQBzACAAZwBhAG0AbQBhACAAMgAsADIAwQBsAHQAYQBsAOEAbgBvAHMAIABzAHoA/AByAGsA
+ZQAgAGcAYQBtAG0AYQAgADIALgAykBp1KHBwlo5RSV6mACAAMgAuADIAIIJyX2ljz4/wAEcAZQBuAGUA
+cgBpAHMAawAgAGcAcgDlACAAZwBhAG0AbQBhACAAMgAsADIALQBwAHIAbwBmAGkAbABPAGIAZQBjAG4A
+4QAgAWEAZQBkAOEAIABnAGEAbQBhACAAMgAuADIF0gXQBd4F1AAgBdAF5AXVBegAIAXbBdwF3AXZACAA
+MgAuADIAUAByAG8AZgBpAGwAbwAgAGcAcgBpAGcAaQBvACAAZwBlAG4AZQByAGkAYwBvACAAZABlAGwA
+bABhACAAZwBhAG0AbQBhACAAMgAsADIARwBhAG0AYQAgAGcAcgBpACAAZwBlAG4AZQByAGkAYwEDACAA
+MgAsADIAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAARwByAGEAdQBzAHQAdQBmAGUAbgAtAFAAcgBvAGYA
+aQBsACAARwBhAG0AbQBhACAAMgAsADLHfLwYACDWjMDJACCsELnIACAAMgAuADIAINUEuFzTDMd8Zm6Q
+GnBwXqZ8+2VwACAAMgAuADIAIGPPj/Blh072TgCCLDCwMOwwpDCsMPMw3gAgADIALgAyACAw1zDtMNUw
+oTCkMOsDkwO1A70DuQO6A8wAIAOTA7oDwQO5ACADkwOsA7wDvAOxACAAMgAuADIAUABlAHIAZgBpAGwA
+IABnAGUAbgDpAHIAaQBjAG8AIABkAGUAIABjAGkAbgB6AGUAbgB0AG8AcwAgAGQAYQAgAEcAYQBtAG0A
+YQAgADIALAAyAEEAbABnAGUAbQBlAGUAbgAgAGcAcgBpAGoAcwAgAGcAYQBtAG0AYQAgADIALAAyAC0A
+cAByAG8AZgBpAGUAbABQAGUAcgBmAGkAbAAgAGcAZQBuAOkAcgBpAGMAbwAgAGQAZQAgAGcAYQBtAG0A
+YQAgAGQAZQAgAGcAcgBpAHMAZQBzACAAMgAsADIOIw4xDgcOKg41DkEOAQ4hDiEOMg5ADgEOIw4iDkwO
+Fw4xDkgOJw5EDhsAIAAyAC4AMgBHAGUAbgBlAGwAIABHAHIAaQAgAEcAYQBtAGEAIAAyACwAMgBZAGwA
+ZQBpAG4AZQBuACAAaABhAHIAbQBhAGEAbgAgAGcAYQBtAG0AYQAgADIALAAyACAALQBwAHIAbwBmAGkA
+aQBsAGkARwBlAG4AZQByAGkBDQBrAGkAIABHAHIAYQB5ACAARwBhAG0AbQBhACAAMgAuADIAIABwAHIA
+bwBmAGkAbABVAG4AaQB3AGUAcgBzAGEAbABuAHkAIABwAHIAbwBmAGkAbAAgAHMAegBhAHIAbwFbAGMA
+aQAgAGcAYQBtAG0AYQAgADIALAAyBB4EMQRJBDAETwAgBEEENQRABDAETwAgBDMEMAQ8BDwEMAAgADIA
+LAAyAC0EPwRABD4ERAQ4BDsETABHAGUAbgBlAHIAaQBjACAARwByAGEAeQAgAEcAYQBtAG0AYQAgADIA
+LgAyACAAUAByAG8AZgBpAGwAZQY6BicGRQYnACAAMgAuADIAIAZEBkgGRgAgBjEGRQYnBi8GSgAgBjkG
+JwZFdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUgSW5jLiwgMjAxMgAAWFlaIAAAAAAAAPNRAAEAAAABFsxj
+dXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIA
+dwB8AIEAhgCLAJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA8AD2APsBAQEHAQ0B
+EwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB
+6QHyAfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsECywLVAuAC6wL1AwAD
+CwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRjBHEE
+fgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF5QX2BgYGFgYnBjcG
+SAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghGCFoI
+bgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQKagqBCpgKrgrFCtwK
+8wsLCyILOQtRC2kLgAuYC7ALyAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2pDcMN
+3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MPzw/sEAkQJhBDEGEQfhCbELkQ1xD1ERMR
+MRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJFGoUixStFM4U
+8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcdF0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZ
+IBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMczBz1HR4dRx1wHZkd
+wx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUgQSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i
+3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgnSSd6J6sn3CgNKD8o
+cSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwu
+gi63Lu4vJC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38zuDPxNCs0ZTSeNNg1
+EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8
+JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAjQGRApkDnQSlBakGsQe5CMEJyQrVC90M6Q31D
+wEQDREdEikTORRJFVUWaRd5GIkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL
+4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2VEJU
+j1TbVShVdVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0nXXhd
+yV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1n
+k2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6cZVx
+8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF8
+4X1BfaF+AX5ifsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZyhteHO4efiASI
+aYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2lCCU
+ipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCerp8dn4uf+qBpoNih
+R6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2u
+oa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8
+m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfL
+Nsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHa
+dtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDq
+W+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf6
+5/t3/Af8mP0p/br+S/7c/23//4AO0iUmSEldTlNNdXRhYmxlRGF0YaNISipWTlNEYXRh0iUmTE1cTlND
+b2xvclNwYWNlok4qXE5TQ29sb3JTcGFjZdIlJlBRV05TQ29sb3KiUCrSJSZTVFdOU0ltYWdlolMqXxAP
+TlNLZXllZEFyY2hpdmVy0VdYVHJvb3SAAQAIABEAGgAjAC0AMgA3AEwAUgBdAGQAawB4AH8AhwCJAIsA
+kACSAJQAnQCiAK0ArwCxALMAuAC7AL0AvwDBAMMAyADfAOEA4w89D0IPTQ9WD2kPbQ94D4EPhg+OD5EP
+lg+lD6kPtA+8D8kP1g/rD/AP9A/2D/gP+hADEAgQDhAWEBgQGhAcEB4QIxArIZchmSGeIawhsCG3Ibwh
+ySHMIdkh3iHmIekh7iH2IfkiCyIOIhMAAAAAAAACAQAAAAAAAABZAAAAAAAAAAAAAAAAAAAiFQ
+</mutableData>
+        </image>
+        <image name="small_logo" width="57" height="93"/>
+    </resources>
+</document>

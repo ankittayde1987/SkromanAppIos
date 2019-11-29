@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="Skroman" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOME TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-Hf-vWK">
+                    <rect key="frame" x="36" y="42" width="248" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="4o6-vx-acL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xt8-rd-hji">
+                    <rect key="frame" x="36" y="71" width="248" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Beh-fZ-0iC">
+                            <rect key="frame" x="11" y="0.0" width="226" height="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15639790892601013" green="0.16343885660171509" blue="0.22562581300735474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Beh-fZ-0iC" firstAttribute="leading" secondItem="Xt8-rd-hji" secondAttribute="leading" constant="11" id="1O0-7o-0sL"/>
+                        <constraint firstAttribute="trailing" secondItem="Beh-fZ-0iC" secondAttribute="trailing" constant="11" id="Ggk-BF-oOE"/>
+                        <constraint firstAttribute="bottom" secondItem="Beh-fZ-0iC" secondAttribute="bottom" id="Lfr-Kc-b7I"/>
+                        <constraint firstItem="Beh-fZ-0iC" firstAttribute="top" secondItem="Xt8-rd-hji" secondAttribute="top" id="eQD-YB-Xdz"/>
+                        <constraint firstAttribute="height" constant="40" id="zQW-x2-LfQ"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-2i-5JK">
+                    <rect key="frame" x="0.0" y="133" width="320" height="53"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEt-VX-YYh">
+                            <rect key="frame" x="244" y="6.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="RXu-Bb-xLl"/>
+                                <constraint firstAttribute="height" constant="40" id="ikm-2M-7YR"/>
+                            </constraints>
+                            <state key="normal" image="add_homes"/>
+                            <connections>
+                                <action selector="tappedAddRoom:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="8id-2X-tta"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROOMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKE-19-jVk">
+                            <rect key="frame" x="36" y="17" width="200" height="19.5"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15651169419288635" green="0.15949767827987671" blue="0.22166797518730164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="cEt-VX-YYh" firstAttribute="centerY" secondItem="0MH-2i-5JK" secondAttribute="centerY" id="Hyq-sT-p89"/>
+                        <constraint firstAttribute="height" constant="53" id="JFn-Qg-eDM"/>
+                        <constraint firstItem="sKE-19-jVk" firstAttribute="centerY" secondItem="0MH-2i-5JK" secondAttribute="centerY" id="Ock-1q-Huf"/>
+                        <constraint firstItem="cEt-VX-YYh" firstAttribute="leading" secondItem="sKE-19-jVk" secondAttribute="trailing" constant="8" id="uKi-Jg-5c4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.10196078431372549" green="0.10980392156862745" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YfU-Hf-vWK" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="36" id="1OW-ur-gOa"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="0MH-2i-5JK" secondAttribute="bottom" constant="15" id="Ccx-wb-4M2"/>
+                <constraint firstItem="YfU-Hf-vWK" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="42" id="Cuk-27-WON"/>
+                <constraint firstItem="0MH-2i-5JK" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="KsS-CC-pCY"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Xt8-rd-hji" secondAttribute="trailing" constant="36" id="NnW-4O-hXW"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="cEt-VX-YYh" secondAttribute="trailing" constant="36" id="RjF-OV-H5Q"/>
+                <constraint firstItem="0MH-2i-5JK" firstAttribute="top" secondItem="Xt8-rd-hji" secondAttribute="bottom" constant="22" id="Uf7-vA-73T"/>
+                <constraint firstItem="Xt8-rd-hji" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="36" id="ceT-DU-USL"/>
+                <constraint firstItem="sKE-19-jVk" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="36" id="ebk-bE-9YV"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="YfU-Hf-vWK" secondAttribute="trailing" constant="36" id="fri-Q9-iV9"/>
+                <constraint firstAttribute="trailing" secondItem="0MH-2i-5JK" secondAttribute="trailing" id="oeE-cg-ir8"/>
+                <constraint firstItem="Xt8-rd-hji" firstAttribute="top" secondItem="YfU-Hf-vWK" secondAttribute="bottom" constant="10" id="tCc-PW-6k2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="btnAddRoom" destination="cEt-VX-YYh" id="mMl-ey-6Px"/>
+                <outlet property="lblHomeTitle" destination="YfU-Hf-vWK" id="o7Q-RP-TK4"/>
+                <outlet property="lblRooms" destination="sKE-19-jVk" id="Ixo-wb-GIy"/>
+                <outlet property="txtHomeName" destination="Beh-fZ-0iC" id="5kZ-9I-SP3"/>
+                <outlet property="vwRoomsLabelContainer" destination="0MH-2i-5JK" id="e7t-9g-OIM"/>
+                <outlet property="vwTxtFieldHomeNameContainer" destination="Xt8-rd-hji" id="zhN-qL-a7y"/>
+            </connections>
+            <point key="canvasLocation" x="69" y="138"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="add_homes" width="28" height="28"/>
+    </resources>
+</document>

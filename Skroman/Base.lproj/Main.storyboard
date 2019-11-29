@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T7V-yN-ijT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2E1-mX-EsA">
+            <objects>
+                <viewController id="T7V-yN-ijT" customClass="ViewController" customModule="BaseProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7pM-0A-rfG"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ZE-ek-TEb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CMj-W2-ovY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z2-7d-VCb">
+                                <rect key="frame" x="20" y="607" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mb1-RA-8SX"/>
+                                </constraints>
+                                <state key="normal" title="  Instagram">
+                                    <color key="titleColor" red="0.074509803920000006" green="0.61568627450000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickInstagram:" destination="T7V-yN-ijT" eventType="touchUpInside" id="XQK-Xe-oPh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcX-OH-5OK">
+                                <rect key="frame" x="20" y="547" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Nce-qg-wv5"/>
+                                </constraints>
+                                <state key="normal" title="Faceboook">
+                                    <color key="titleColor" red="0.074509803920000006" green="0.61568627450000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickFacebook:" destination="T7V-yN-ijT" eventType="touchUpInside" id="ZIf-kH-w1X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pve-6d-SND">
+                                <rect key="frame" x="20" y="487" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xLP-qa-EIc"/>
+                                </constraints>
+                                <state key="normal" title="Dropbox">
+                                    <color key="titleColor" red="0.074509803920000006" green="0.61568627450000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickDropbox:" destination="T7V-yN-ijT" eventType="touchUpInside" id="CUm-sx-tkj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvO-1i-rPa">
+                                <rect key="frame" x="20" y="427" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Ko-cJ-fKR"/>
+                                </constraints>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" red="0.074509803920000006" green="0.61568627450000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickTwitter:" destination="T7V-yN-ijT" eventType="touchUpInside" id="Xno-VV-1i8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbO-aH-d5x">
+                                <rect key="frame" x="20" y="367" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fAT-wa-YMm"/>
+                                </constraints>
+                                <state key="normal" title="  Google">
+                                    <color key="titleColor" red="0.074509803920000006" green="0.61568627450000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGoogle:" destination="T7V-yN-ijT" eventType="touchUpInside" id="Xsi-xD-ZlQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScT-mc-3zN">
+                                <rect key="frame" x="20" y="307" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wef-wy-SfF"/>
+                                </constraints>
+                                <state key="normal" title="Linked In">
+                                    <color key="titleColor" red="0.074509803920000006" green="0.61568627450000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGoogle:" destination="T7V-yN-ijT" eventType="touchUpInside" id="0X5-sj-wo7"/>
+                                    <action selector="clickLinkedIn:" destination="T7V-yN-ijT" eventType="touchUpInside" id="o8C-bb-aoB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9z2-7d-VCb" firstAttribute="top" secondItem="WcX-OH-5OK" secondAttribute="bottom" constant="20" id="90D-mJ-J3c"/>
+                            <constraint firstItem="Pve-6d-SND" firstAttribute="top" secondItem="qvO-1i-rPa" secondAttribute="bottom" constant="20" id="CSR-6z-EtD"/>
+                            <constraint firstAttribute="trailing" secondItem="9z2-7d-VCb" secondAttribute="trailing" constant="20" id="Ey2-eu-d2d"/>
+                            <constraint firstAttribute="trailing" secondItem="Pve-6d-SND" secondAttribute="trailing" constant="20" id="SZY-ud-o8p"/>
+                            <constraint firstItem="qvO-1i-rPa" firstAttribute="leading" secondItem="CMj-W2-ovY" secondAttribute="leading" constant="20" id="XBE-gP-l07"/>
+                            <constraint firstAttribute="trailing" secondItem="WcX-OH-5OK" secondAttribute="trailing" constant="20" id="Zhc-3w-Uw6"/>
+                            <constraint firstAttribute="trailing" secondItem="zbO-aH-d5x" secondAttribute="trailing" constant="20" id="aQ0-vP-YOs"/>
+                            <constraint firstItem="ScT-mc-3zN" firstAttribute="leading" secondItem="CMj-W2-ovY" secondAttribute="leading" constant="20" id="bz3-fn-KTF"/>
+                            <constraint firstItem="Pve-6d-SND" firstAttribute="leading" secondItem="CMj-W2-ovY" secondAttribute="leading" constant="20" id="ewr-mc-dFl"/>
+                            <constraint firstItem="zbO-aH-d5x" firstAttribute="top" secondItem="ScT-mc-3zN" secondAttribute="bottom" constant="20" id="fwP-vB-GGA"/>
+                            <constraint firstItem="6ZE-ek-TEb" firstAttribute="top" secondItem="9z2-7d-VCb" secondAttribute="bottom" constant="20" id="hHY-w6-tlV"/>
+                            <constraint firstItem="qvO-1i-rPa" firstAttribute="top" secondItem="zbO-aH-d5x" secondAttribute="bottom" constant="20" id="iKr-LQ-vuO"/>
+                            <constraint firstItem="zbO-aH-d5x" firstAttribute="leading" secondItem="CMj-W2-ovY" secondAttribute="leading" constant="20" id="ioK-8L-myc"/>
+                            <constraint firstItem="WcX-OH-5OK" firstAttribute="top" secondItem="Pve-6d-SND" secondAttribute="bottom" constant="20" id="maF-dI-SP7"/>
+                            <constraint firstAttribute="trailing" secondItem="qvO-1i-rPa" secondAttribute="trailing" constant="20" id="nTh-YG-GH0"/>
+                            <constraint firstAttribute="trailing" secondItem="ScT-mc-3zN" secondAttribute="trailing" constant="20" id="qQK-Ax-Kt8"/>
+                            <constraint firstItem="9z2-7d-VCb" firstAttribute="leading" secondItem="CMj-W2-ovY" secondAttribute="leading" constant="20" id="qTf-nq-xD9"/>
+                            <constraint firstItem="WcX-OH-5OK" firstAttribute="leading" secondItem="CMj-W2-ovY" secondAttribute="leading" constant="20" id="tdz-8m-4Nj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Opj-mP-tv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5517.6000000000004" y="-3886.5067466266869"/>
+        </scene>
+    </scenes>
+</document>

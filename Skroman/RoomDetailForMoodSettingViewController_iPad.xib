@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoomDetailForMoodSettingViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="ZDj-43-2wr" id="Lpy-gg-S4B"/>
+                <outlet property="view" destination="AE7-Eg-vgp" id="gkL-7h-wbb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AE7-Eg-vgp">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZDj-43-2wr">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="gBo-4e-Anb"/>
+                                <outlet property="delegate" destination="-1" id="PRZ-GL-5Cg"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ZDj-43-2wr" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="HMj-nz-K1l"/>
+                        <constraint firstItem="ZDj-43-2wr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nxJ-R3-elW"/>
+                        <constraint firstItem="ZDj-43-2wr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sKS-TS-1pa"/>
+                        <constraint firstItem="ZDj-43-2wr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tQ4-Qy-YDG"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="centerX" secondItem="AE7-Eg-vgp" secondAttribute="centerX" id="1dh-5u-ksE"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="bottom" secondItem="0f8-Ys-HGh" secondAttribute="bottom" id="JeH-i2-eUr"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="0f8-Ys-HGh" secondAttribute="leading" id="ZQj-a3-5Rc"/>
+                <constraint firstItem="0f8-Ys-HGh" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="aOk-hC-62t"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="AE7-Eg-vgp" secondAttribute="top" id="p4r-d4-NMC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="0f8-Ys-HGh"/>
+            <point key="canvasLocation" x="1" y="677"/>
+        </view>
+    </objects>
+</document>

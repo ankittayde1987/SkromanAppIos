@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="uvq-kU-2SV">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdK-CJ-TvE">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Hc4-ct-JL1"/>
+                        <constraint firstAttribute="width" constant="44" id="Jif-eW-ZmI"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peo-dE-Am1">
+                    <rect key="frame" x="269" y="12" width="42" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSE-SG-qoJ">
+                    <rect key="frame" x="553" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="EZ9-1N-tma"/>
+                        <constraint firstAttribute="width" constant="44" id="Ted-RT-MAG"/>
+                    </constraints>
+                    <state key="normal" image="search"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jdK-CJ-TvE" secondAttribute="bottom" id="4HL-31-p5t"/>
+                <constraint firstItem="peo-dE-Am1" firstAttribute="centerX" secondItem="uvq-kU-2SV" secondAttribute="centerX" constant="-10" id="L0I-MY-2Kc"/>
+                <constraint firstItem="peo-dE-Am1" firstAttribute="centerY" secondItem="uvq-kU-2SV" secondAttribute="centerY" id="Ycr-tT-g2N"/>
+                <constraint firstItem="jdK-CJ-TvE" firstAttribute="leading" secondItem="uvq-kU-2SV" secondAttribute="leading" id="i5J-YI-JCC"/>
+                <constraint firstAttribute="bottom" secondItem="YSE-SG-qoJ" secondAttribute="bottom" id="ozb-1l-pun"/>
+                <constraint firstAttribute="trailing" secondItem="YSE-SG-qoJ" secondAttribute="trailing" constant="3" id="ssR-jg-PqK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52" y="12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="11" height="21"/>
+        <image name="search" width="22" height="22"/>
+    </resources>
+</document>

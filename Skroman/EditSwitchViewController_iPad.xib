@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditSwitchViewController" customModule="Skroman" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="6HQ-NK-C1V" id="C9g-sh-hf2"/>
+                <outlet property="view" destination="QuN-Tk-vpD" id="qMb-dF-VWN"/>
+                <outlet property="vwConstant_iPadWidth" destination="Oqc-9j-AKC" id="81N-bS-WDf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QuN-Tk-vpD">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-Od-3nR">
+                    <rect key="frame" x="224" y="0.0" width="320" height="1024"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6HQ-NK-C1V" customClass="TPKeyboardAvoidingCollectionView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1024"/>
+                            <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="whP-g5-dIB">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="1cG-Qz-9LM"/>
+                                <outlet property="delegate" destination="-1" id="t2Y-bW-bcl"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10150200869999999" green="0.10856882480000001" blue="0.16660797599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="vte-Ls-n07" firstAttribute="bottom" secondItem="6HQ-NK-C1V" secondAttribute="bottom" id="0KF-mW-4fU"/>
+                        <constraint firstItem="6HQ-NK-C1V" firstAttribute="top" secondItem="Ato-Od-3nR" secondAttribute="top" id="0M9-7X-isd"/>
+                        <constraint firstItem="6HQ-NK-C1V" firstAttribute="leading" secondItem="vte-Ls-n07" secondAttribute="leading" id="5VJ-ho-kEU"/>
+                        <constraint firstAttribute="width" constant="320" id="Oqc-9j-AKC"/>
+                        <constraint firstItem="vte-Ls-n07" firstAttribute="trailing" secondItem="6HQ-NK-C1V" secondAttribute="trailing" id="w2L-3V-biU"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="vte-Ls-n07"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ato-Od-3nR" firstAttribute="bottom" secondItem="9NH-Hz-j2M" secondAttribute="bottom" id="CBq-Yc-wOT"/>
+                <constraint firstItem="Ato-Od-3nR" firstAttribute="top" secondItem="QuN-Tk-vpD" secondAttribute="top" id="M7g-no-LeE"/>
+                <constraint firstItem="Ato-Od-3nR" firstAttribute="centerX" secondItem="QuN-Tk-vpD" secondAttribute="centerX" id="sk1-bd-qKk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9NH-Hz-j2M"/>
+            <point key="canvasLocation" x="42" y="1127"/>
+        </view>
+    </objects>
+</document>

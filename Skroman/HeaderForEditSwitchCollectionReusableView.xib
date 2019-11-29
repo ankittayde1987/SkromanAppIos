@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="v14-G4-GRj" customClass="HeaderForEditSwitchCollectionReusableView" customModule="Skroman" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHN-5z-KEZ">
+                    <rect key="frame" x="16" y="25" width="288" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Mm4-0R-e5S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBd-4E-oEr">
+                    <rect key="frame" x="16" y="55" width="288" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDG-tj-Ckk">
+                            <rect key="frame" x="12" y="0.0" width="264" height="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15639790889999999" green="0.16343885659999999" blue="0.22562581300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="gDG-tj-Ckk" secondAttribute="bottom" id="6Zk-sA-cEv"/>
+                        <constraint firstItem="gDG-tj-Ckk" firstAttribute="top" secondItem="xBd-4E-oEr" secondAttribute="top" id="87I-gA-PWq"/>
+                        <constraint firstAttribute="trailing" secondItem="gDG-tj-Ckk" secondAttribute="trailing" constant="12" id="PrH-fv-pkD"/>
+                        <constraint firstItem="gDG-tj-Ckk" firstAttribute="leading" secondItem="xBd-4E-oEr" secondAttribute="leading" constant="12" id="cVb-RH-MGY"/>
+                        <constraint firstAttribute="height" constant="40" id="uEv-Ca-c02"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Consumption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCG-sY-2Ru">
+                    <rect key="frame" x="16" y="111" width="288" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="VyS-eL-OOI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRR-7h-epM">
+                    <rect key="frame" x="16" y="141" width="288" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R4w-WS-eAh">
+                            <rect key="frame" x="12" y="0.0" width="264" height="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15639790889999999" green="0.16343885659999999" blue="0.22562581300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="R4w-WS-eAh" secondAttribute="trailing" constant="12" id="DXk-1K-kCe"/>
+                        <constraint firstItem="R4w-WS-eAh" firstAttribute="top" secondItem="VRR-7h-epM" secondAttribute="top" id="GaS-kB-nK1"/>
+                        <constraint firstAttribute="height" constant="40" id="LLa-ls-WXY"/>
+                        <constraint firstItem="R4w-WS-eAh" firstAttribute="leading" secondItem="VRR-7h-epM" secondAttribute="leading" constant="12" id="eSt-wi-lyj"/>
+                        <constraint firstAttribute="bottom" secondItem="R4w-WS-eAh" secondAttribute="bottom" id="vQm-OX-jv6"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncG-Eg-Yk1">
+                    <rect key="frame" x="16" y="211" width="288" height="19"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.097598500549999995" green="0.10475020860000001" blue="0.1586461663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yl2-wK-Fe9" firstAttribute="trailing" secondItem="sHN-5z-KEZ" secondAttribute="trailing" constant="16" id="3TA-ss-8KW"/>
+                <constraint firstItem="ncG-Eg-Yk1" firstAttribute="top" secondItem="VRR-7h-epM" secondAttribute="bottom" constant="30" id="9e1-pO-OPu"/>
+                <constraint firstItem="xBd-4E-oEr" firstAttribute="leading" secondItem="Yl2-wK-Fe9" secondAttribute="leading" constant="16" id="AOu-qG-eJk"/>
+                <constraint firstItem="Yl2-wK-Fe9" firstAttribute="trailing" secondItem="GCG-sY-2Ru" secondAttribute="trailing" constant="16" id="Eco-Lm-Znm"/>
+                <constraint firstItem="Yl2-wK-Fe9" firstAttribute="trailing" secondItem="xBd-4E-oEr" secondAttribute="trailing" constant="16" id="FJN-oY-V8d"/>
+                <constraint firstItem="sHN-5z-KEZ" firstAttribute="top" secondItem="Yl2-wK-Fe9" secondAttribute="top" constant="25" id="JNE-Md-E8B"/>
+                <constraint firstItem="GCG-sY-2Ru" firstAttribute="top" secondItem="xBd-4E-oEr" secondAttribute="bottom" constant="16" id="K5w-yi-VB6"/>
+                <constraint firstItem="sHN-5z-KEZ" firstAttribute="leading" secondItem="Yl2-wK-Fe9" secondAttribute="leading" constant="16" id="XSl-WN-vgU"/>
+                <constraint firstItem="Yl2-wK-Fe9" firstAttribute="trailing" secondItem="VRR-7h-epM" secondAttribute="trailing" constant="16" id="bad-Fb-lrv"/>
+                <constraint firstItem="GCG-sY-2Ru" firstAttribute="leading" secondItem="Yl2-wK-Fe9" secondAttribute="leading" constant="16" id="dyY-Wp-SDn"/>
+                <constraint firstItem="VRR-7h-epM" firstAttribute="top" secondItem="GCG-sY-2Ru" secondAttribute="bottom" constant="10" id="euQ-O2-OaR"/>
+                <constraint firstItem="Yl2-wK-Fe9" firstAttribute="trailing" secondItem="ncG-Eg-Yk1" secondAttribute="trailing" constant="16" id="fKG-Zq-GKm"/>
+                <constraint firstItem="ncG-Eg-Yk1" firstAttribute="leading" secondItem="Yl2-wK-Fe9" secondAttribute="leading" constant="16" id="s5M-9C-VSb"/>
+                <constraint firstItem="xBd-4E-oEr" firstAttribute="top" secondItem="sHN-5z-KEZ" secondAttribute="bottom" constant="10" id="t7V-kI-3nu"/>
+                <constraint firstItem="VRR-7h-epM" firstAttribute="leading" secondItem="Yl2-wK-Fe9" secondAttribute="leading" constant="16" id="tYa-QG-0RC"/>
+                <constraint firstItem="Yl2-wK-Fe9" firstAttribute="bottom" secondItem="ncG-Eg-Yk1" secondAttribute="bottom" constant="20" id="xhN-a6-ZUK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Yl2-wK-Fe9"/>
+            <connections>
+                <outlet property="lblPowerConsumption" destination="GCG-sY-2Ru" id="p57-Dn-cN3"/>
+                <outlet property="lblSelectIcon" destination="ncG-Eg-Yk1" id="89G-Mo-bPO"/>
+                <outlet property="lblSwitchName" destination="sHN-5z-KEZ" id="LwV-GY-8n6"/>
+                <outlet property="txtPowerConsumption" destination="R4w-WS-eAh" id="qrS-KL-CJY"/>
+                <outlet property="txtSwitchName" destination="gDG-tj-Ckk" id="I4s-je-bCT"/>
+                <outlet property="vwPowerConsumptionContainer" destination="VRR-7h-epM" id="pad-d0-Rb6"/>
+                <outlet property="vwTxtSwitchNameContainer" destination="xBd-4E-oEr" id="HDt-gZ-uoA"/>
+            </connections>
+            <point key="canvasLocation" x="97" y="160"/>
+        </collectionReusableView>
+    </objects>
+</document>
