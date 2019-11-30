@@ -16,8 +16,8 @@ let MASTERSWITCHOFF   = "masterswitchOff";
 let MASTERSWITCHON   = "masterswitchOn";
 let iREMOTEACCESSON   = "iRemoteAccessOn";
 let iREMOTEACCESSOFF   = "iRemoteAccessOff";
-let CHILDLOCKOPEN   = "childlock_open";
-let CHILDLOCKCLOSE   = "childlock_close";
+let CHILDLOCK_OPEN   = "childlock_open";
+let CHILDLOCK_CLOSE   = "childlock_close";
 
 
 
@@ -125,10 +125,10 @@ class SwitchScreen: WKInterfaceController, sliderCellDelegate {
     func setChildLock(){
         
         if SKDatabase.getChildLock() == 0 {
-            self.buttonChildLock.setBackgroundImageNamed(CHILDLOCKCLOSE)
+            self.buttonChildLock.setBackgroundImageNamed(CHILDLOCK_CLOSE)
         }
         else{
-            self.buttonChildLock.setBackgroundImageNamed(CHILDLOCKOPEN)
+            self.buttonChildLock.setBackgroundImageNamed(CHILDLOCK_OPEN)
         }
     }
     
