@@ -87,7 +87,7 @@
                                     <group key="rootItem" width="1" height="60" alignment="left" radius="15" id="q7B-y1-H0C">
                                         <items>
                                             <label width="136" height="88" alignment="center" text="Skroman Switches Office Nilakh, Pune" textAlignment="center" numberOfLines="3" id="HVq-zR-oXB">
-                                                <color key="textColor" red="0.91825210489999998" green="0.79289758600000004" blue="0.45086256619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.91921645402908325" green="0.79262846708297729" blue="0.45029056072235107" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                         </items>
                                     </group>
@@ -119,6 +119,12 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
                                         <action selector="buttonChildLockClicked:" destination="uKK-Jh-Ctg" id="a7e-DC-ens"/>
+                                    </connections>
+                                </button>
+                                <button width="25" height="25" alignment="right" backgroundImage="mood" id="rvB-N8-B8y">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="4"/>
+                                    <connections>
+                                        <action selector="buttonMoodClicked:" destination="uKK-Jh-Ctg" id="K0B-K9-QpT"/>
                                     </connections>
                                 </button>
                                 <button width="25" height="25" alignment="left" backgroundImage="masterswitchOff" id="kz7-g3-wwg">
@@ -170,7 +176,7 @@
                                                     </slider>
                                                     <label alignment="center" verticalAlignment="bottom" text="Name Of Switch " textAlignment="center" id="yFa-cx-WYb">
                                                         <color key="textColor" red="0.91825210489999998" green="0.79289758600000004" blue="0.45086256619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                        <fontDescription key="font" type="system" pointSize="8"/>
                                                     </label>
                                                 </items>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -200,6 +206,7 @@
                     </items>
                     <connections>
                         <outlet property="buttonChildLock" destination="qIE-RQ-OMb" id="bYv-FU-IgZ"/>
+                        <outlet property="buttonMood" destination="rvB-N8-B8y" id="eQH-3o-gHW"/>
                         <outlet property="labelActiveDevices" destination="2cn-YC-BGK" id="Bzu-CU-Qhp"/>
                         <outlet property="labelSwitchName" destination="cbx-EL-TAM" id="38Z-WT-Iu7"/>
                         <outlet property="longpPressOnImage" destination="9DU-VO-8U1" id="pAU-Np-QZC"/>
@@ -209,7 +216,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="771" y="374"/>
+            <point key="canvasLocation" x="771" y="366"/>
         </scene>
         <!--LoaderaView-->
         <scene sceneID="eyh-27-PC0">
@@ -228,6 +235,37 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="1045" y="345"/>
+        </scene>
+        <!-- Select Mood-->
+        <scene sceneID="bfU-W0-7n2">
+            <objects>
+                <controller identifier="MoodScreen" title=" Select Mood" id="fUM-9Y-vpI" customClass="MoodScreen" customModule="SkromanWatch_Extension">
+                    <items>
+                        <table alignment="left" id="Q7X-yc-5rU">
+                            <items>
+                                <tableRow identifier="MoodScreenCell" id="puB-Aj-Clw" customClass="MoodScreenCell" customModule="SkromanWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="XAd-NS-6hF">
+                                        <items>
+                                            <label width="136" height="41" alignment="left" text="Mood Name" textAlignment="center" id="m0G-Ky-msD">
+                                                <color key="textColor" red="0.91921645399999996" green="0.79262846710000001" blue="0.45029056070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="labelMood" destination="m0G-Ky-msD" id="Mq3-u5-Wk5"/>
+                                        <outlet property="listGroup" destination="XAd-NS-6hF" id="bzD-qr-EJk"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableMoodList" destination="Q7X-yc-5rU" id="F7j-9b-7Ji"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1045" y="667"/>
         </scene>
         <!--HomeListScreen-->
         <scene sceneID="1vR-fq-aOB">
@@ -341,5 +379,6 @@
         <image name="lightOn" width="70" height="70"/>
         <image name="loader1" width="472.5" height="472.5"/>
         <image name="masterswitchOff" width="25" height="25"/>
+        <image name="mood" width="25" height="25"/>
     </resources>
 </document>

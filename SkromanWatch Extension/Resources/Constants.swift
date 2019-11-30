@@ -80,6 +80,7 @@ let ChildLockON  = 1
 let PUBLISH_UPDATE_SWITCH           = "update_switch"
 let PUBLISH_Master_Mode_App_To_Rpi  = "master_mode_app_to_rpi"
 let PUBLISH_Child_Mode_App_To_Rpi   = "child_mode_app_to_rpi"
+let PUBLISH_Hardware_Mood_Trigger   = "hardware_mood_triggered"
 
 
 /* FOR MQTT SUBSCRIBE */
@@ -88,6 +89,7 @@ let PUBLISH_Child_Mode_App_To_Rpi   = "child_mode_app_to_rpi"
 let SUBSCRIBE_UPDATE_SWITCH           = "update_switch_ack_app"
 let SUBSCRIBE_Master_Mode_Feedback    = "master_mode_feedback"
 let SUBSCRIBE_Child_Mode_Feedback   = "child_mode_feedback"
+let SUBSCRIBE_Hardware_Mood_Feedback   = "update_mood_status_ack"
 
 
 /* FOR  NSNotifications */

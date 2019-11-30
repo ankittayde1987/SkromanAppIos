@@ -23,7 +23,8 @@ let statusT   =   "status"
 let switch_id   =   "switch_id"
 let typeOfSwitch   =   "type"
 let wattage   =   "wattage"
-
+let mood_id = "mood_id"
+let mood_type = "mood_type"
 
 import UIKit
 import SideMenu
@@ -75,7 +76,6 @@ class HomeViewController: BaseViewController,CAPSPageMenuDelegate,WCSessionDeleg
         
         setUpWCSession()
         setUpMQTTSession()
-        
  	}
     
     
@@ -608,6 +608,17 @@ class HomeViewController: BaseViewController,CAPSPageMenuDelegate,WCSessionDeleg
             if message.value(forKey: master_mode_switch_id) != nil {
                 mastermodeswitchid = message.value(forKey: master_mode_switch_id) as! String
             }
+            
+            var moodID : String = ""
+            if message.value(forKey: mood_id) != nil {
+                moodID = message.value(forKey: mood_id) as! String
+            }
+            
+            var moodType : Int = 0
+            if message.value(forKey: mood_type) != nil {
+                moodType = message.value(forKey: mood_type) as! Int
+            }
+
 
             
             
@@ -635,8 +646,19 @@ class HomeViewController: BaseViewController,CAPSPageMenuDelegate,WCSessionDeleg
                 responseJson.removeObject(forKey: switch_id)
                 responseJson.removeObject(forKey: typeOfSwitch)
                 responseJson.removeObject(forKey: wattage)
-                
+                self.publishTopic(_topic: dictonarySubPub, datas: responseJson)
             }
+            else if((moodID != "") && (moodType != 0)){
+                
+
+                SMQTTClient.sharedInstance().publishJson(json: responseJson, topic: dictonarySubPub.value(forKey: PublishTopic) as! String){
+                    (error) in
+                    print("error :\(String(describing: error))")
+                    if((error) != nil) {
+                        Utility.showErrorAccordingToLocalAndGlobal()
+                    }
+                }            }
+
             else{
                 
                 dictonaryIds.removeAllObjects()
@@ -653,10 +675,9 @@ class HomeViewController: BaseViewController,CAPSPageMenuDelegate,WCSessionDeleg
                 responseJson.removeObject(forKey: master_mode_status)
                 responseJson.removeObject(forKey: typeOfSwitch)
                 responseJson.removeObject(forKey: wattage)
-                
+                self.publishTopic(_topic: dictonarySubPub, datas: responseJson)
             }
             
-            self.publishTopic(_topic: dictonarySubPub, datas: responseJson)
         }
     }
     
@@ -740,13 +761,12 @@ class HomeViewController: BaseViewController,CAPSPageMenuDelegate,WCSessionDeleg
         let arrayValues : NSArray = datas.allValues as NSArray
         let arrayKeys : NSArray = datas.allKeys as NSArray
         
-        for x in 0 ..< arrayKeys.count {
+            for x in 0 ..< arrayKeys.count {
             
-            let newStringKey = String(format: "%@", arrayKeys.object(at: x) as! String)
-            let newStringValue = String(format: "%@", arrayValues.object(at: x) as! String)
-            dictonaryFormat.setValue(newStringValue, forKey: newStringKey)
-        }
-
+                let newStringKey = String(format: "%@", arrayKeys.object(at: x) as! String)
+                let newStringValue = String(format: "%@", arrayValues.object(at: x) as! String)
+                dictonaryFormat.setValue(newStringValue, forKey: newStringKey)
+            }
     
         if !Utility.isAnyConnectionIssue()
         {
@@ -789,7 +809,7 @@ class HomeViewController: BaseViewController,CAPSPageMenuDelegate,WCSessionDeleg
                         DatabaseManager.sharedInstance().updateSwitchMasterModeInOutStatus(objSwitch!, master_mode_status: dictonaryFormat.value(forKey: "master_mode_active") as! String)
                     }
                 }
-                
+                                
                 if self.switchesCounter == valSwiCount {
 
                     Utility.delay(3){

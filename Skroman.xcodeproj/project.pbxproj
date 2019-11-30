@@ -120,6 +120,8 @@
 		9391F4AD233B75F6005A0841 /* LoaderaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9391F4AC233B75F6005A0841 /* LoaderaView.swift */; };
 		939E9CC22338E65B00B6B07E /* AddIPAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E9CC02338E65B00B6B07E /* AddIPAddressViewController.swift */; };
 		939E9CC32338E65B00B6B07E /* AddIPAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939E9CC12338E65B00B6B07E /* AddIPAddressViewController.xib */; };
+		93F368D8239268B100CB961C /* MoodScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F368D7239268B100CB961C /* MoodScreenCell.swift */; };
+		93F368DB239268FC00CB961C /* MoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F368DA239268FC00CB961C /* MoodScreen.swift */; };
 		D107323A2158ED730045421A /* ChnagePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10732382158ED730045421A /* ChnagePasswordViewController.swift */; };
 		D107323B2158ED730045421A /* ChnagePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10732392158ED730045421A /* ChnagePasswordViewController.xib */; };
 		D107323F2158F1630045421A /* SelectOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107323D2158F1630045421A /* SelectOptionViewController.swift */; };
@@ -425,6 +427,8 @@
 		9391F4AC233B75F6005A0841 /* LoaderaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderaView.swift; sourceTree = "<group>"; };
 		939E9CC02338E65B00B6B07E /* AddIPAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIPAddressViewController.swift; sourceTree = "<group>"; };
 		939E9CC12338E65B00B6B07E /* AddIPAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddIPAddressViewController.xib; sourceTree = "<group>"; };
+		93F368D7239268B100CB961C /* MoodScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodScreenCell.swift; sourceTree = "<group>"; };
+		93F368DA239268FC00CB961C /* MoodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodScreen.swift; sourceTree = "<group>"; };
 		C909D19CFFBF535ADE932916 /* Pods-Skroman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skroman.release.xcconfig"; path = "Pods/Target Support Files/Pods-Skroman/Pods-Skroman.release.xcconfig"; sourceTree = "<group>"; };
 		D10732382158ED730045421A /* ChnagePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChnagePasswordViewController.swift; sourceTree = "<group>"; };
 		D10732392158ED730045421A /* ChnagePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChnagePasswordViewController.xib; sourceTree = "<group>"; };
@@ -985,6 +989,7 @@
 				9343A9232327BDAE00BBCA2F /* InterfaceController */,
 				9355DEDC232A4410006DA9C4 /* RoomScreen */,
 				9337D8C7232B70F800FA5D33 /* SwitchScreen */,
+				93F368D32392658600CB961C /* MoodScreen */,
 				9391F4A9233B754F005A0841 /* LoaderView */,
 				9343A9092327B33400BBCA2F /* ExtensionDelegate.swift */,
 				9343A9272327C6C900BBCA2F /* Resources */,
@@ -1102,6 +1107,23 @@
 				939E9CC12338E65B00B6B07E /* AddIPAddressViewController.xib */,
 			);
 			name = AddIPAddressViewController;
+			sourceTree = "<group>";
+		};
+		93F368D32392658600CB961C /* MoodScreen */ = {
+			isa = PBXGroup;
+			children = (
+				93F368DA239268FC00CB961C /* MoodScreen.swift */,
+				93F368D9239268DB00CB961C /* MoodScrenCell */,
+			);
+			path = MoodScreen;
+			sourceTree = "<group>";
+		};
+		93F368D9239268DB00CB961C /* MoodScrenCell */ = {
+			isa = PBXGroup;
+			children = (
+				93F368D7239268B100CB961C /* MoodScreenCell.swift */,
+			);
+			path = MoodScrenCell;
 			sourceTree = "<group>";
 		};
 		BE6AA68EDF55ACC584BBA763 /* Frameworks */ = {
@@ -2177,12 +2199,14 @@
 				9343A9302327D07B00BBCA2F /* SKAPIManager.swift in Sources */,
 				9355DEDE232A4456006DA9C4 /* RoomScreen.swift in Sources */,
 				9311490F2328C0E200850817 /* Home.swift in Sources */,
+				93F368DB239268FC00CB961C /* MoodScreen.swift in Sources */,
 				9343A90C2327B33500BBCA2F /* NotificationController.swift in Sources */,
 				9343A90A2327B33400BBCA2F /* ExtensionDelegate.swift in Sources */,
 				931149152328CE9500850817 /* SwitchBoxes.swift in Sources */,
 				9337D8CC232B7D2D00FA5D33 /* SwitchCell.swift in Sources */,
 				9343A92A2327C71000BBCA2F /* Constants.swift in Sources */,
 				9311490B2328B6F200850817 /* SyncData.swift in Sources */,
+				93F368D8239268B100CB961C /* MoodScreenCell.swift in Sources */,
 				9343A9262327BDEE00BBCA2F /* SettingsScreen.swift in Sources */,
 				9343A92D2327CAB500BBCA2F /* SKDatabase.swift in Sources */,
 				9311491B2328CFC900850817 /* Moods.swift in Sources */,

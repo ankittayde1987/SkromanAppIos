@@ -101,4 +101,14 @@ class SKAPIManager: NSObject {
     }
 
     
+     func sendHardwareMood(dictonary: NSMutableDictionary) {
+        
+        let publishTopic = NSString(format:"%@/%@/%@", SKDatabase.getServerId(),SKDatabase.getHomeId(),PUBLISH_Hardware_Mood_Trigger)
+        let subscribeTopic = NSString(format:"%@/%@/%@", SKDatabase.getServerId(),SKDatabase.getHomeId(),SUBSCRIBE_Hardware_Mood_Feedback)
+        
+        dictonary.setValue(publishTopic, forKey: "publishTopic")
+        dictonary.setValue(subscribeTopic, forKey: "subscribeTopic")
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: SendToMqttViaiPhone), object: nil, userInfo: dictonary as? [AnyHashable : Any])
+    }
 }

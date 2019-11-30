@@ -20,9 +20,6 @@ let CHILDLOCK_OPEN   = "childlock_open";
 let CHILDLOCK_CLOSE   = "childlock_close";
 
 
-
-let NOT_REQUIRED : Int = 0
-
 import WatchKit
 import Foundation
 
@@ -36,6 +33,7 @@ class SwitchScreen: WKInterfaceController, sliderCellDelegate {
 
     @IBOutlet weak var switchMaster: WKInterfaceButton!
     @IBOutlet weak var switchRemote: WKInterfaceButton!
+    @IBOutlet weak var buttonMood: WKInterfaceButton!
     @IBOutlet weak var buttonChildLock: WKInterfaceButton!
     @IBOutlet weak var labelSwitchName: WKInterfaceLabel!
     @IBOutlet weak var labelActiveDevices: WKInterfaceLabel!
@@ -46,6 +44,7 @@ class SwitchScreen: WKInterfaceController, sliderCellDelegate {
     var swiBoxes = SwitchBoxes()
     var switches = Switches()
     var arrayOfSwitches = NSMutableArray()
+    var arrayOfMoodOfSwitches = NSMutableArray()
     var masterSwitchStatus : Bool?
 
 
@@ -64,13 +63,18 @@ class SwitchScreen: WKInterfaceController, sliderCellDelegate {
         
         swiBoxes = SKDatabase.getSwitchBoxes()
         
+        self.arrayOfMoodOfSwitches.removeAllObjects()
+        self.arrayOfMoodOfSwitches = NSMutableArray()
+        self.arrayOfMoodOfSwitches = swiBoxes.arrayOfMoods as! NSMutableArray
+        
+        
         self.labelSwitchName.setText(swiBoxes.name);
 
         self.setRemoteAccess()
         self.setUpNotificationCentre()
 
         self.setMasterSwitch()
-        self.setChildLock()
+        self.setChildLockAndMoodSwitch()
         self.setUpArrayForTable()
         self.setTableProperties()
     }
@@ -122,7 +126,7 @@ class SwitchScreen: WKInterfaceController, sliderCellDelegate {
     }
     
     
-    func setChildLock(){
+    func setChildLockAndMoodSwitch(){
         
         if SKDatabase.getChildLock() == 0 {
             self.buttonChildLock.setBackgroundImageNamed(CHILDLOCK_CLOSE)
@@ -130,8 +134,9 @@ class SwitchScreen: WKInterfaceController, sliderCellDelegate {
         else{
             self.buttonChildLock.setBackgroundImageNamed(CHILDLOCK_OPEN)
         }
+        
+        self.buttonMood.setBackgroundColor(UIColor(red: 181/255, green: 25/255, blue: 254/255, alpha: 1.0))
     }
-    
     
     func setUpArrayForTable() {
         
@@ -454,4 +459,21 @@ class SwitchScreen: WKInterfaceController, sliderCellDelegate {
         SKAPIManager.sharedInstance().sendMasterMode(dictonary: jsonToBeSent)
         self.presentController(withName: "LoaderaView", context: nil)
     }
+    
+    
+    @IBAction func buttonMoodClicked(_ sender: Any) {
+        
+        let arrayOfMoods  = NSMutableArray()
+
+        for x in 0 ..< self.arrayOfMoodOfSwitches.count {
+            
+            let moodDictonary : Moods = arrayOfMoodOfSwitches.object(at: x) as! Moods
+            
+                if !arrayOfMoods.contains(moodDictonary.mood_id!) {
+                    arrayOfMoods.add(moodDictonary.mood_id!)
+                }
+        }
+        self.pushController(withName: "MoodScreen", context: arrayOfMoods)
+    }
 }
+
