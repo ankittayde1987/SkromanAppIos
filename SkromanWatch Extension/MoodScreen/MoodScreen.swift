@@ -44,10 +44,11 @@ class MoodScreen: WKInterfaceController {
         
         for x in 0 ..< moodData.count {
             
+            let dict : NSDictionary = moodData.object(at: x) as! NSDictionary
             var row = MoodScreenCell()
             row = self.tableMoodList.rowController(at: x ) as! MoodScreenCell
             row.listGroup.setBackgroundColor(UIColor(red: 25/255, green: 27/255, blue: 42/255, alpha: 1.0))
-            row.labelMood.setText((moodData.object(at: x) as! String))
+            row.labelMood.setText((dict.value(forKey: mood_name) as! String))
         }
     }
     
@@ -58,9 +59,11 @@ class MoodScreen: WKInterfaceController {
         
          /* for mood id and mood type  */
         
-        let mood_id : String = moodData.object(at: rowIndex) as! String
-        jsonToBeSent.setValue(mood_id, forKey: "mood_id")
-        jsonToBeSent.setValue(3, forKey: "mood_type")
+        let dict : NSDictionary = moodData.object(at: rowIndex) as! NSDictionary
+
+        let mood_ID : String = dict.value(forKey: mood_id) as! String
+        jsonToBeSent.setValue(mood_ID, forKey: mood_id)
+        jsonToBeSent.setValue(3, forKey: mood_type)
 
         SKAPIManager.sharedInstance().sendHardwareMood(dictonary: jsonToBeSent)
         self.presentController(withName: "LoaderaView", context: nil)

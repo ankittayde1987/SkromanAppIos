@@ -469,8 +469,16 @@ class SwitchScreen: WKInterfaceController, sliderCellDelegate {
             
             let moodDictonary : Moods = arrayOfMoodOfSwitches.object(at: x) as! Moods
             
-                if !arrayOfMoods.contains(moodDictonary.mood_id!) {
-                    arrayOfMoods.add(moodDictonary.mood_id!)
+            let dictonary = NSMutableDictionary ()
+            dictonary.setValue(moodDictonary.mood_name, forKey: mood_name)
+            dictonary.setValue(moodDictonary.mood_id, forKey: mood_id)
+
+                if !arrayOfMoods.contains(dictonary) {
+                    
+                    let dictonaryFiltered = NSMutableDictionary ()
+                    dictonaryFiltered.setValue(moodDictonary.mood_name, forKey: mood_name)
+                    dictonaryFiltered.setValue(moodDictonary.mood_id, forKey: mood_id)
+                    arrayOfMoods.add(dictonaryFiltered)
                 }
         }
         self.pushController(withName: "MoodScreen", context: arrayOfMoods)

@@ -197,7 +197,10 @@ class VVBaseUserDefaults: NSObject {
     }
 
     class func setCurrentHomeIP(home_ip:String) {
-        UserDefaults.standard.set(home_ip, forKey: kCurrentHOMEIP)
+        let defaults: UserDefaults = UserDefaults.standard
+        defaults.setValue(home_ip, forKey: kCurrentHOMEIP)
+        defaults.synchronize()
+
     }
 
     class func setHomeIpDictonary(home_dict:NSMutableDictionary) {

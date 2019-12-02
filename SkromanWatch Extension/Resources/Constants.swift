@@ -94,6 +94,11 @@ let SUBSCRIBE_Hardware_Mood_Feedback   = "update_mood_status_ack"
 
 /* FOR  NSNotifications */
 
+public let SendToMqttViaiPhone = "SendToMqttViaiPhone"
 
- 
-    public let SendToMqttViaiPhone = "SendToMqttViaiPhone"
+
+/* For Mood Screen */
+
+public let mood_id = "mood_id"
+public let mood_name = "mood_name"
+public let mood_type = "mood_type"
