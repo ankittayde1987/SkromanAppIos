@@ -27,6 +27,10 @@ class MyHomesViewController: BaseViewController,UITableViewDataSource,UITableVie
         super.viewWillAppear(animated)
         getAllHome()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
     func getAllHome() {
          arrHome = DatabaseManager.sharedInstance().getAllHomes()
         self.tableView.reloadData()
@@ -288,6 +292,7 @@ class MyHomesViewController: BaseViewController,UITableViewDataSource,UITableVie
                                             self.startSyncData()
 
                                         })
+                                        
                                         self.present(alert, animated: true)
                                     }
                                 }
@@ -475,7 +480,7 @@ class MyHomesViewController: BaseViewController,UITableViewDataSource,UITableVie
         // Take a dictonary and associate home-name:{ homeid:ip-value}
         VVBaseUserDefaults.setCurrentHomeIP(home_ip: ipValue)
 
-        SMQTTClient.sharedInstance().connectToServer(success: { (error) in
+        SMQTTClient.sharedInstance().connectToServerForAddingHome(success: { (error) in
             if((error) != nil)
             {
                 SVProgressHUD.dismiss()
@@ -722,6 +727,7 @@ class MyHomesViewController: BaseViewController,UITableViewDataSource,UITableVie
             //{"user_id":"pradip12345678","pi_id":"PI-VI3MI5"}
             dict.setValue(Utility.getCurrentUserId(), forKey: "user_id");
             dict.setValue(VVBaseUserDefaults.getCurrentPIID(), forKey: "pi_id");
+            
             SSLog(message: "DICT FOR LINKING : \(dict)")
             SMQTTClient.sharedInstance().publishJson(json: dict, topic: SM_TOPIC_LINK_USER_ID_AND_PI_ID) { (error) in
                 if error != nil{

@@ -36,7 +36,6 @@ class AddIPAddressViewController: UIViewController , UITextFieldDelegate , MQTTS
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.textfieldIpAddress.becomeFirstResponder()
     }
 
     

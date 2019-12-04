@@ -64,7 +64,7 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
             }
             else
             {
-                SMQTTClient.sharedInstance().connectToServer(success: { (error) in
+                SMQTTClient.sharedInstance().connectToServerForAddingHome(success: { (error) in
                     if((error) != nil)
                     {
                         failure(error)
@@ -132,7 +132,27 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
     }
 
 
+        func connectToServerForAddingHome(success:@escaping(_ error:Error?)->Void)
+        {
+                
+                var ipAddress : String = ""
+                
+                    ipAddress = VVBaseUserDefaults.getCurrentHomeIP()
 
+                
+                
+               self.objSession  = MQTTSession()
+                // Client ID: For MQTT connection use client id with format – “skroman-XXXXXXXXXXXX”
+               // self.objSession = MQTTSession.init(clientId: "skroman-123123123123")
+                self.objSession?.delegate = self as MQTTSessionDelegate
+                self.objSession?.connect(toHost: ipAddress, port: 1883, usingSSL: false, connectHandler: { (error) in
+                    SSLog(message: "CONNECTED TO LOCAL SUCCESSFULLY");
+                    //Subscribe
+    //                self.subscribeAllTopic()
+                    success(error)
+                })
+    //        }
+        }
     func connectToServer(success:@escaping(_ error:Error?)->Void)
     {
             let homeName = VVBaseUserDefaults.getCurrentHomeNAME() as String
@@ -312,14 +332,52 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
 
     }
     
+    func handlePi_iDnHome_iDChange(topicName:String) -> String{
+        
+        var newTopicName : String = ""
+
+        let array = topicName.components(separatedBy: "/") as NSArray
+
+        if array.count == 3 {
+
+            if (topicName.contains("link_user_and_pi") || topicName.contains("sync_for_vps")){
+
+                let topicNameFirst : String = array.object(at: 0) as! String
+                let topicNameLast : String = array.lastObject as! String
+                newTopicName = String(format:"%@/%@/%@",topicNameFirst,VVBaseUserDefaults.getCurrentPIID(),topicNameLast)
+            }
+            else if (topicName.contains("get_previous_data")){
+
+                let topicNameFirst : String = array.object(at: 0) as! String
+                let topicNameLast : String = array.lastObject as! String
+                newTopicName = String(format:"%@/%@/%@",topicNameFirst,Utility.getCurrentUserId(),topicNameLast)
+                }
+            else{
+
+                let topName : String = array.lastObject as! String
+                newTopicName = String(format:"%@/%@/%@",VVBaseUserDefaults.getCurrentPIID(),VVBaseUserDefaults.getCurrentHomeID(),topName)
+            }
+        }
+        else if array.count == 2{
+
+            let topName : String = array.lastObject as! String
+            newTopicName = String(format:"%@/%@",VVBaseUserDefaults.getCurrentPIID(),topName)
+        }
+
+        
+        return newTopicName
+    }
+    
+    
     
     func publishJson(json:NSDictionary!,topic:String,spublishHandler: @escaping SPublishHandler)
     {
-         
+        var topicCopy = self.handlePi_iDnHome_iDChange(topicName: topic)        
+        
         self.checkingMQTTConnectivityTimeToTime()
 
         //FOR GLOBAL CONNECT
-        var topicCopy = topic
+
         var flagGlobalConnect : Bool = false
         if VVBaseUserDefaults.getIsGlobalConnect() {
             flagGlobalConnect = true

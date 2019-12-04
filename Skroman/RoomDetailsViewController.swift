@@ -372,7 +372,6 @@ class RoomDetailsViewController: UIViewController, UITableViewDataSource, UITabl
         dict.setValue("1", forKey: "slide_end");
         print("switchdata \(dict)")
         
- 
 
      SMQTTClient.sharedInstance().publishJson(json: dict, topic: SM_TOPIC_UPDATE_SWITCH) { (error) in
          print("error :\(String(describing: error))")

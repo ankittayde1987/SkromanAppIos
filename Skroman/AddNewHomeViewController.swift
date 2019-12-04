@@ -271,7 +271,7 @@ class AddNewHomeViewController: BaseViewController, UICollectionViewDelegate, UI
 	
 	//MARK: - HeaderCollectionReusableViewDelegate
     func tappedAddRoom() {
-        if Utility.isRestrictOperation(){
+         if Utility.isRestrictOperation(){
             Utility.showAlertMessage(strMessage: SSLocalizedString(key: "connect_to_local_for_this_action_message"))
         }
         else
@@ -379,12 +379,17 @@ class AddNewHomeViewController: BaseViewController, UICollectionViewDelegate, UI
                     //Handle Success
                     SSLog(message: objHome)
                     //First Check Whether Home Id is present in DB if present don't insert else Insert
-                                        
+                    
+                    
+                    VVBaseUserDefaults.setCurrentHomeName(home_name: objHome!.home_name!)
+
                     
                     if !DatabaseManager.sharedInstance().isAlreadyHomeExistsInDB(home_id: (objHome?.home_id)!)
                     {
                         //Insert Home in home table
-                        DatabaseManager.sharedInstance().addHome(home_name: (objHome?.home_name)!, home_id: (objHome?.home_id)!, pi_id: VVBaseUserDefaults.getCurrentPIID())
+//                        DatabaseManager.sharedInstance().addHome(home_name: (objHome?.home_name)!, home_id: (objHome?.home_id)!, pi_id: VVBaseUserDefaults.getCurrentPIID())
+                        DatabaseManager.sharedInstance().addHome(home_name: (objHome?.home_name)!, home_id: (objHome?.home_id)!, pi_id: (objHome?.pi_id)!)
+
                         
                         // Take shared dictonary and then add dictonary to existing one and associate it like :  home-name:{ homeid:ip-value}
                         
@@ -425,7 +430,7 @@ class AddNewHomeViewController: BaseViewController, UICollectionViewDelegate, UI
                 else
                 {
               //      Show error message Home already exists!!!
-                    self.showAlertMessage(strMessage: SSLocalizedString(key: "home_already_exists"))
+//                    self.showAlertMessage(strMessage: SSLocalizedString(key: "home_already_exists"))
                 }
                 
                 

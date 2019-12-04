@@ -136,7 +136,7 @@ extension DatabaseManager {
                     
                     do {
                         // insert home
-                        try db.executeUpdate("INSERT INTO home(home_name,home_id,pi_id,is_default)  VALUES (?,?,?,?)", values: [objHome.home_name ?? "",objHome.home_id ?? "" ,VVBaseUserDefaults.getCurrentPIID(),!isAlreadyHaveDefaultHome])
+                        try db.executeUpdate("INSERT INTO home(home_name,home_id,pi_id,is_default)  VALUES (?,?,?,?)", values: [objHome.home_name ?? "",objHome.home_id ?? "" ,objHome.pi_id ?? "",!isAlreadyHaveDefaultHome])
                         
                         
                         //insert rooms

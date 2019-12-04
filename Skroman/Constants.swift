@@ -90,8 +90,8 @@ let SM_GLOBAL_PREFIX = "global_in/"
 let SM_GLOBAL_PREFIX_ACK = "global_vps_app/"
 
 
-let current_pid = VVBaseUserDefaults.getCurrentPIID()
-let current_home_id = VVBaseUserDefaults.getCurrentHomeID()
+var current_pid = VVBaseUserDefaults.getCurrentPIID()
+var current_home_id = VVBaseUserDefaults.getCurrentHomeID()
 
 let SM_GET_PI_ID_ACK = "get_pi_id_ack"
 let SM_GET_PI_ID = "get_pi_id"
