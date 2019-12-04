@@ -75,42 +75,7 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
             }
         }
         
-    }
-//
-//    func changeLocalToGlobalServer(globalServer:Bool)
-//    {
-//
-//        SVProgressHUD.show()
-//        self.isGolbalServer = globalServer;
-//
-//        Static.instance = SMQTTClient();
-//
-//        if(self.isGolbalServer)!
-//        {
-//            SMQTTClient.sharedInstance().connectToServerGlobal(success: { (error) in
-//                if((error) != nil)
-//                {
-//                    Utility.showErrorMessage(withTitle: "", message: SSLocalizedString(key: "unable_to_connect_global_server") )
-//                    SVProgressHUD.dismiss()
-//
-//                }else{
-//                    SVProgressHUD.dismiss()
-//                }});
-//        }
-//        else
-//        {
-//            SMQTTClient.sharedInstance().connectToServer(success: { (error) in
-//                if((error) != nil)
-//                {
-//                    Utility.showErrorMessage(withTitle: "local", message: SSLocalizedString(key: "unable_to_connect") )
-//                    SVProgressHUD.dismiss()
-//
-//                }else{
-//                    SVProgressHUD.dismiss()
-//                }});
-//        }
-//    }
-    
+    }    
     
     
     
@@ -332,47 +297,10 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
 
     }
     
-    func handlePi_iDnHome_iDChange(topicName:String) -> String{
-        
-        var newTopicName : String = ""
-
-        let array = topicName.components(separatedBy: "/") as NSArray
-
-        if array.count == 3 {
-
-            if (topicName.contains("link_user_and_pi") || topicName.contains("sync_for_vps")){
-
-                let topicNameFirst : String = array.object(at: 0) as! String
-                let topicNameLast : String = array.lastObject as! String
-                newTopicName = String(format:"%@/%@/%@",topicNameFirst,VVBaseUserDefaults.getCurrentPIID(),topicNameLast)
-            }
-            else if (topicName.contains("get_previous_data")){
-
-                let topicNameFirst : String = array.object(at: 0) as! String
-                let topicNameLast : String = array.lastObject as! String
-                newTopicName = String(format:"%@/%@/%@",topicNameFirst,Utility.getCurrentUserId(),topicNameLast)
-                }
-            else{
-
-                let topName : String = array.lastObject as! String
-                newTopicName = String(format:"%@/%@/%@",VVBaseUserDefaults.getCurrentPIID(),VVBaseUserDefaults.getCurrentHomeID(),topName)
-            }
-        }
-        else if array.count == 2{
-
-            let topName : String = array.lastObject as! String
-            newTopicName = String(format:"%@/%@",VVBaseUserDefaults.getCurrentPIID(),topName)
-        }
-
-        
-        return newTopicName
-    }
     
-    
-    
-    func publishJson(json:NSDictionary!,topic:String,spublishHandler: @escaping SPublishHandler)
+        func publishJson(json:NSDictionary!,topic:String,spublishHandler: @escaping SPublishHandler)
     {
-        var topicCopy = self.handlePi_iDnHome_iDChange(topicName: topic)        
+        var topicCopy = self.handlePi_iDnHome_iDChange(topicName: topic)
         
         self.checkingMQTTConnectivityTimeToTime()
 
@@ -409,7 +337,7 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
     func  subscribe( topic:String ,sSubscibeHandler : @escaping  (_ data: Data?, _ topic:String) -> Void) -> Void
     {
         //FOR GLOBAL CONNECT
-        var topicCopy = topic
+        var topicCopy = self.handlePi_iDnHome_iDChange(topicName: topic)
         
         if topicCopy != SM_TOPIC_SUBSCRIBE_ALL
         {
@@ -427,7 +355,8 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
     }
     func unsubscribe( topic:String) -> Void {
         //FOR GLOBAL CONNECT
-        var topicCopy = topic
+        var topicCopy = self.handlePi_iDnHome_iDChange(topicName: topic)
+
         if VVBaseUserDefaults.getIsGlobalConnect() {
             if !topicCopy.contains(SM_GLOBAL_PREFIX_ACK) {
                 topicCopy = SM_GLOBAL_PREFIX_ACK + topicCopy
@@ -506,25 +435,9 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
                 DatabaseManager.sharedInstance().updateSwitchStatus(obj!, status: obj?.status ?? 0)
                 NotificationCenter.default.post(name: .handleUpdateSwitchAPISuccess, object: nil)
             }
-
         }
-        
-        
-//        if let str = responseDict?.value(forKey: "switch_id") as? String, let switch_id = Int(str) {
-//            objSwitch.switch_id =  switch_id
-//        }
-//
-//        objSwitch.switchbox_id = responseDict?.value(forKey: "switchbox_id") as? String
-//
-//        if let str = responseDict?.value(forKey: "status") as? String, let status = Int(str) {
-//            objSwitch.status =  status
-//        }
-//
-//        if let str = responseDict?.value(forKey: "position") as? String, let position = Int(str) {
-//            objSwitch.position =  position
-//        }
-       
     }
+    
     
     func handleRenameSwitchBoxAPI(_ data: Data?, _ topic:String)
     {
@@ -590,6 +503,44 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
     func handleLinkUserIdAndPIIDAPI(_ data: Data?, _ topic:String)
     {
          NotificationCenter.default.post(name: .handleLinkUserIdAndPIIDAPISuccess, object: nil)
+    }
+    
+    
+    
+    func handlePi_iDnHome_iDChange(topicName:String) -> String{
+        
+        var newTopicName : String = ""
+
+        let array = topicName.components(separatedBy: "/") as NSArray
+
+        if array.count == 3 {
+
+            if (topicName.contains("link_user_and_pi") || topicName.contains("sync_for_vps")){
+
+                let topicNameFirst : String = array.object(at: 0) as! String
+                let topicNameLast : String = array.lastObject as! String
+                newTopicName = String(format:"%@/%@/%@",topicNameFirst,VVBaseUserDefaults.getCurrentPIID(),topicNameLast)
+            }
+            else if (topicName.contains("get_previous_data")){
+
+                let topicNameFirst : String = array.object(at: 0) as! String
+                let topicNameLast : String = array.lastObject as! String
+                newTopicName = String(format:"%@/%@/%@",topicNameFirst,Utility.getCurrentUserId(),topicNameLast)
+                }
+            else{
+
+                let topName : String = array.lastObject as! String
+                newTopicName = String(format:"%@/%@/%@",VVBaseUserDefaults.getCurrentPIID(),VVBaseUserDefaults.getCurrentHomeID(),topName)
+            }
+        }
+        else if array.count == 2{
+
+            let topName : String = array.lastObject as! String
+            newTopicName = String(format:"%@/%@",VVBaseUserDefaults.getCurrentPIID(),topName)
+        }
+
+        
+        return newTopicName
     }
 }
 
