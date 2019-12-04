@@ -75,7 +75,8 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
             }
         }
         
-    }    
+    }
+    
     
     
     
@@ -537,6 +538,9 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
 
             let topName : String = array.lastObject as! String
             newTopicName = String(format:"%@/%@",VVBaseUserDefaults.getCurrentPIID(),topName)
+        }
+        else{
+            newTopicName = String(format:"%@",topicName)
         }
 
         

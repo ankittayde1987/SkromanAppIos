@@ -423,7 +423,7 @@ class Utility: NSObject {
     }
     
     class func getTopicNameToCheck(topic : String) -> String{
-        var topicCopy: String = topic
+        var topicCopy: String = SMQTTClient.sharedInstance().handlePi_iDnHome_iDChange(topicName: topic)
         if VVBaseUserDefaults.getIsGlobalConnect() {
             topicCopy = SM_GLOBAL_PREFIX_ACK + topicCopy
         }
