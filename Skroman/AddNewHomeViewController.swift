@@ -372,8 +372,7 @@ class AddNewHomeViewController: BaseViewController, UICollectionViewDelegate, UI
             SSLog(message: data)
             if let objHome : Home? = Home.decode(data!){
                 
-                if objHome?.success != nil && objHome?.success != 0
-                {
+                if objHome?.success != nil && objHome?.success != 0 {
                     //Dismiss SVProgressView
                     SVProgressHUD.dismiss()
                     //Handle Success
@@ -427,10 +426,9 @@ class AddNewHomeViewController: BaseViewController, UICollectionViewDelegate, UI
                         self.navigationController?.popToViewController(self, animated: true)
                     }
                 }
-                else
-                {
+                else{
               //      Show error message Home already exists!!!
-//                    self.showAlertMessage(strMessage: SSLocalizedString(key: "home_already_exists"))
+                    self.showAlertMessage(strMessage:   "home_might_already_exists")
                 }
                 
                 

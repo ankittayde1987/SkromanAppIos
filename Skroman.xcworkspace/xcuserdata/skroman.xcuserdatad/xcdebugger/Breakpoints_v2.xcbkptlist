@@ -374,8 +374,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "398"
             endingLineNumber = "398"
-            landmarkName = "startSyncData()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -425,8 +425,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "330"
             endingLineNumber = "330"
-            landmarkName = "applicationDidBecomeActive(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -617,55 +617,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7C2FCCE2-004C-4F0D-9660-6195075D4C7D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            timestampString = "594362732.904207"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "608"
-            endingLineNumber = "608"
-            landmarkName = "didSuccessWithDelay(strSSID:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7C2FCCE2-004C-4F0D-9660-6195075D4C7D - 218185355bb21271"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.MyHomesViewController.didSuccessWithDelay(strSSID: Swift.String) -&gt; ()"
-                  moduleName = "Skroman"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "608"
-                  endingLineNumber = "608"
-                  offsetFromSymbolStart = "2160">
-               </Location>
-               <Location
-                  uuid = "7C2FCCE2-004C-4F0D-9660-6195075D4C7D - 218185355bb21271"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.MyHomesViewController.didSuccessWithDelay(strSSID: Swift.String) -&gt; ()"
-                  moduleName = "Skroman"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "608"
-                  endingLineNumber = "608"
-                  offsetFromSymbolStart = "2188">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3437FD16-A88D-4A7C-923B-DCC621893C2F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -694,23 +645,6 @@
             startingLineNumber = "120"
             endingLineNumber = "120"
             landmarkName = "registerNewUser(body:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "ABA2778F-E7B1-409D-9352-E24631D45146"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            timestampString = "594362732.90449"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "610"
-            endingLineNumber = "610"
-            landmarkName = "didSuccessWithDelay(strSSID:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -758,9 +692,9 @@
                   urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/Skroman/AddNewHomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "387"
-                  endingLineNumber = "387"
-                  offsetFromSymbolStart = "1896">
+                  startingLineNumber = "390"
+                  endingLineNumber = "390"
+                  offsetFromSymbolStart = "2240">
                </Location>
                <Location
                   uuid = "7A043699-136F-4F9F-8306-B0E620299B19 - 6dd615842de659e0"
@@ -773,9 +707,9 @@
                   urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/Skroman/AddNewHomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "387"
-                  endingLineNumber = "387"
-                  offsetFromSymbolStart = "1960">
+                  startingLineNumber = "390"
+                  endingLineNumber = "390"
+                  offsetFromSymbolStart = "2292">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -910,42 +844,8 @@
             timestampString = "595238134.8635679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "260"
-            endingLineNumber = "260"
-            landmarkName = "didReceivedIP(ipValue:from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F34C3EA9-E440-48A0-8B59-C32517F7FB9D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Skroman/RegisterViewController.swift"
-            timestampString = "595238134.863939"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "didReceivedIP(ipValue:from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "29A02B54-F539-4B0B-BF23-D55252520581"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Skroman/RegisterViewController.swift"
-            timestampString = "595238134.8642991"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "didReceivedIP(ipValue:from:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2391,8 +2291,8 @@
             filePath = "Skroman/SMQTTClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "forceConnectToServerGlobal(success:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3015,8 +2915,8 @@
             filePath = "Skroman/SMQTTClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "483"
-            endingLineNumber = "483"
+            startingLineNumber = "480"
+            endingLineNumber = "480"
             landmarkName = "handleTriggerHomeOrHardwareMoodAPI(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3047,8 +2947,8 @@
             filePath = "Skroman/SMQTTClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "subscribeAllTopic()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3104,22 +3004,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9DC7201C-29C4-4887-BE12-0CD8552C2B68"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "484"
-            endingLineNumber = "484"
-            landmarkName = "didReceivedIP(ipValue:from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "09949F3D-8486-4AD9-A956-6109182193CD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -3130,22 +3014,6 @@
             startingLineNumber = "642"
             endingLineNumber = "642"
             landmarkName = "didSuccessWithDelay(strSSID:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B78E28D2-92E8-4A48-9CF8-B208687E3A73"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "719"
-            endingLineNumber = "719"
-            landmarkName = "linkUserAndPiIdAPICall()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3207,8 +3075,8 @@
                   urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/Skroman/AddNewHomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "391"
-                  endingLineNumber = "391"
+                  startingLineNumber = "390"
+                  endingLineNumber = "390"
                   offsetFromSymbolStart = "2240">
                </Location>
                <Location
@@ -3222,57 +3090,9 @@
                   urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/Skroman/AddNewHomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "391"
-                  endingLineNumber = "391"
+                  startingLineNumber = "390"
+                  endingLineNumber = "390"
                   offsetFromSymbolStart = "2292">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9782C30C-87B4-49D9-BB64-F315E9BE9A97"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "506"
-            endingLineNumber = "506"
-            landmarkName = "didReceivedIP(ipValue:from:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9782C30C-87B4-49D9-BB64-F315E9BE9A97 - 5922471309b65f6b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.MyHomesViewController.didReceivedIP(ipValue: Swift.String, from: Swift.String) -&gt; ()"
-                  moduleName = "Skroman"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "506"
-                  endingLineNumber = "506"
-                  offsetFromSymbolStart = "1840">
-               </Location>
-               <Location
-                  uuid = "9782C30C-87B4-49D9-BB64-F315E9BE9A97 - 5922471309b65f6b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.MyHomesViewController.didReceivedIP(ipValue: Swift.String, from: Swift.String) -&gt; ()"
-                  moduleName = "Skroman"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "506"
-                  endingLineNumber = "506"
-                  offsetFromSymbolStart = "1868">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3328,150 +3148,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EF52F21D-87EF-494E-B65A-6824606BE566"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "670"
-            endingLineNumber = "670"
-            landmarkName = "linkUserAndPiIdAPICall()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "01F6B236-401A-4D67-B87E-B43FA4E9167C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "674"
-            endingLineNumber = "674"
-            landmarkName = "linkUserAndPiIdAPICall()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "01F6B236-401A-4D67-B87E-B43FA4E9167C - d71708c9294d4e1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Skroman.MyHomesViewController.linkUserAndPiIdAPICall() -&gt; ()"
-                  moduleName = "Skroman"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "675"
-                  endingLineNumber = "675"
-                  offsetFromSymbolStart = "256">
-               </Location>
-               <Location
-                  uuid = "01F6B236-401A-4D67-B87E-B43FA4E9167C - 3adb6e71c5a48fc4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in Skroman.MyHomesViewController.linkUserAndPiIdAPICall() -&gt; ()"
-                  moduleName = "Skroman"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "676"
-                  endingLineNumber = "676"
-                  offsetFromSymbolStart = "192">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CEA6A30D-3E7A-490B-9115-7EE805783A9A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "683"
-            endingLineNumber = "683"
-            landmarkName = "linkUserAndPiIdAPICall()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CEA6A30D-3E7A-490B-9115-7EE805783A9A - db94c2ad7c4bfc33"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in Skroman.MyHomesViewController.linkUserAndPiIdAPICall() -&gt; ()"
-                  moduleName = "Skroman"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "683"
-                  endingLineNumber = "683"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "CEA6A30D-3E7A-490B-9115-7EE805783A9A - f153cae82c9fd130"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in Skroman.MyHomesViewController.linkUserAndPiIdAPICall() -&gt; ()"
-                  moduleName = "Skroman"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "684"
-                  endingLineNumber = "684"
-                  offsetFromSymbolStart = "196">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F1C9B684-3ABA-4626-8776-BF6D0CC00535"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "693"
-            endingLineNumber = "693"
-            landmarkName = "linkUserAndPiIdAPICall()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FF6EBCA0-B8A0-48EA-8573-5FF078A19BB6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "698"
-            endingLineNumber = "698"
-            landmarkName = "linkUserAndPiIdAPICall()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F03D720D-A95D-477F-946A-F4883EB37DFD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -3520,22 +3196,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B4B71242-0287-4C7F-A331-2D3F50D082A9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "688"
-            endingLineNumber = "688"
-            landmarkName = "linkUserAndPiIdAPICall()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1471B48C-7D23-4672-809F-2CBE51037DA6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -3543,10 +3203,42 @@
             filePath = "FreeGoods/MyHomesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "731"
-            endingLineNumber = "731"
+            startingLineNumber = "732"
+            endingLineNumber = "732"
             landmarkName = "linkUserAndPiIdAPICall()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1471B48C-7D23-4672-809F-2CBE51037DA6 - d71708c9294d4e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Skroman.MyHomesViewController.linkUserAndPiIdAPICall() -&gt; ()"
+                  moduleName = "Skroman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "732"
+                  endingLineNumber = "732"
+                  offsetFromSymbolStart = "1056">
+               </Location>
+               <Location
+                  uuid = "1471B48C-7D23-4672-809F-2CBE51037DA6 - a4809b2a030bedf3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.MyHomesViewController.linkUserAndPiIdAPICall() -&gt; ()"
+                  moduleName = "Skroman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "733"
+                  endingLineNumber = "733"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3591,8 +3283,8 @@
             filePath = "Skroman/SMQTTClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
             landmarkName = "subscribeAllTopic()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3754,54 +3446,6 @@
             startingLineNumber = "172"
             endingLineNumber = "172"
             landmarkName = "tableView(_:editActionsForRowAt:for:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "425774FB-DC13-44CD-B4A0-155A64D7DACD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Skroman/AddIPAddressViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "btnSaveTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2BCCAE85-0290-4797-B2DE-DD117581E859"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "481"
-            endingLineNumber = "481"
-            landmarkName = "didReceivedIP(ipValue:from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9D0720C5-BB6B-4621-B129-D41923D2229C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeGoods/MyHomesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "551"
-            endingLineNumber = "551"
-            landmarkName = "didReceivedIP(ipValue:from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3979,38 +3623,182 @@
             endingLineNumber = "391"
             landmarkName = "addHomeAPIAndHandling()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A8CEE7B-D146-413D-81F7-192811D47690"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FreeGoods/MyHomesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "504"
+            endingLineNumber = "504"
+            landmarkName = "didReceivedIP(ipValue:from:)"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "B5B3BD57-0493-4344-8195-2588807C890F - 6dd615842de659e0"
+                  uuid = "9A8CEE7B-D146-413D-81F7-192811D47690 - 5922471309b65f6b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in Skroman.AddNewHomeViewController.addHomeAPIAndHandling() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.MyHomesViewController.didReceivedIP(ipValue: Swift.String, from: Swift.String) -&gt; ()"
                   moduleName = "Skroman"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/Skroman/AddNewHomeViewController.swift"
+                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "391"
-                  endingLineNumber = "391"
-                  offsetFromSymbolStart = "2240">
+                  startingLineNumber = "504"
+                  endingLineNumber = "504"
+                  offsetFromSymbolStart = "1300">
                </Location>
                <Location
-                  uuid = "B5B3BD57-0493-4344-8195-2588807C890F - 6dd615842de659e0"
+                  uuid = "9A8CEE7B-D146-413D-81F7-192811D47690 - 5922471309b65f6b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in Skroman.AddNewHomeViewController.addHomeAPIAndHandling() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.MyHomesViewController.didReceivedIP(ipValue: Swift.String, from: Swift.String) -&gt; ()"
                   moduleName = "Skroman"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/Skroman/AddNewHomeViewController.swift"
+                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/FreeGoods/MyHomesViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "391"
-                  endingLineNumber = "391"
-                  offsetFromSymbolStart = "2292">
+                  startingLineNumber = "504"
+                  endingLineNumber = "504"
+                  offsetFromSymbolStart = "1348">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A1C844A-BF67-4F96-8858-5637C23D7D00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FreeGoods/MyHomesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
+            landmarkName = "processHomeChange(ipValue:homeObj:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "582AAB73-D720-4A8A-91B3-A0B7383C56A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FreeGoods/MyHomesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
+            landmarkName = "processHomeChange(ipValue:homeObj:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86D55FB2-6CD7-41A6-9A06-16B956CBF9BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Skroman/SMQTTClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
+            landmarkName = "subscribe(topic:sSubscibeHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23D97C6B-7AC9-4C84-ADB5-EE61B2B9A973"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Skroman/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "didReceivedIP(ipValue:from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "23D97C6B-7AC9-4C84-ADB5-EE61B2B9A973 - 83efdbed86181807"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.RegisterViewController.didReceivedIP(ipValue: Swift.String, from: Swift.String) -&gt; ()"
+                  moduleName = "Skroman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/Skroman/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "248"
+                  endingLineNumber = "248"
+                  offsetFromSymbolStart = "3260">
+               </Location>
+               <Location
+                  uuid = "23D97C6B-7AC9-4C84-ADB5-EE61B2B9A973 - 83efdbed86181807"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Skroman.RegisterViewController.didReceivedIP(ipValue: Swift.String, from: Swift.String) -&gt; ()"
+                  moduleName = "Skroman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/skroman/Documents/GitHub/SkromanAppIos/Skroman/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "248"
+                  endingLineNumber = "248"
+                  offsetFromSymbolStart = "3320">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAF6CF36-0FA4-4935-9FC6-EE9324CCF1D7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Skroman/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "didReceivedIP(ipValue:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86D25CC6-E3F2-4728-B829-5B2C060DAB64"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FreeGoods/MyHomesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "481"
+            endingLineNumber = "481"
+            landmarkName = "didReceivedIP(ipValue:from:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

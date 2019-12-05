@@ -98,16 +98,13 @@ class SMQTTClient: NSObject,MQTTSessionDelegate {
     }
 
 
-        func connectToServerForAddingHome(success:@escaping(_ error:Error?)->Void)
-        {
+        func connectToServerForAddingHome(success:@escaping(_ error:Error?)->Void){
+            
+            var ipAddress : String = ""
                 
-                var ipAddress : String = ""
+            ipAddress = VVBaseUserDefaults.getCurrentHomeIP()
                 
-                    ipAddress = VVBaseUserDefaults.getCurrentHomeIP()
-
-                
-                
-               self.objSession  = MQTTSession()
+            self.objSession  = MQTTSession()
                 // Client ID: For MQTT connection use client id with format – “skroman-XXXXXXXXXXXX”
                // self.objSession = MQTTSession.init(clientId: "skroman-123123123123")
                 self.objSession?.delegate = self as MQTTSessionDelegate
